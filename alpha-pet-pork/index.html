@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alpha Pet Pork | Premium Pet Supplies in Ruiru, Kenya</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%), url('https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1798&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .opening-hours li {
+            transition: all 0.3s ease;
+        }
+        
+        .opening-hours li:hover {
+            transform: translateX(5px);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .pet-card {
+            transition: all 0.3s ease;
+        }
+        
+        .pet-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .map-container {
+            height: 400px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+<!-- Navigation -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<i class="fas fa-paw text-2xl text-indigo-600"></i>
+<span class="text-xl font-bold text-gray-800">Alpha Pet Pork</span>
+</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-gray-800 hover:text-indigo-600 transition" href="#home">Home</a>
+<a class="text-gray-800 hover:text-indigo-600 transition" href="#products">Products</a>
+<a class="text-gray-800 hover:text-indigo-600 transition" href="#about">About</a>
+<a class="text-gray-800 hover:text-indigo-600 transition" href="#hours">Hours</a>
+<a class="text-gray-800 hover:text-indigo-600 transition" href="#contact">Contact</a>
+</div>
+<button class="md:hidden text-gray-800" id="menu-toggle">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+</div>
+<!-- Mobile Menu -->
+<div class="md:hidden hidden bg-white w-full px-4 py-2 shadow-lg" id="mobile-menu">
+<a class="block py-2 text-gray-800 hover:text-indigo-600 transition" href="#home">Home</a>
+<a class="block py-2 text-gray-800 hover:text-indigo-600 transition" href="#products">Products</a>
+<a class="block py-2 text-gray-800 hover:text-indigo-600 transition" href="#about">About</a>
+<a class="block py-2 text-gray-800 hover:text-indigo-600 transition" href="#hours">Hours</a>
+<a class="block py-2 text-gray-800 hover:text-indigo-600 transition" href="#contact">Contact</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-gradient py-20 md:py-32" id="home">
+<div class="container mx-auto px-4">
+<div class="max-w-2xl mx-auto text-center">
+<h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Premium Pet Supplies in Ruiru</h1>
+<p class="text-lg text-gray-700 mb-8">Your one-stop shop for all your pet's needs. Quality products for happy, healthy pets.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition shadow-lg" href="#products">
+                        Shop Now <i class="fas fa-shopping-cart ml-2"></i>
+</a>
+<a class="bg-white hover:bg-gray-100 text-gray-800 font-medium py-3 px-6 rounded-lg transition shadow-lg" href="#contact">
+                        Contact Us <i class="fas fa-phone ml-2"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-16 bg-white" id="products">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Our Featured Products</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">High-quality pet supplies to keep your furry friends happy and healthy</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="pet-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
+<div class="h-48 overflow-hidden">
+<img alt="Premium Dog Food" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1589927986089-35812388d1f4?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"/>
+</div>
+<div class="p-5">
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Premium Dog Food</h3>
+<p class="text-gray-600 mb-4">Nutritionally balanced meals for your canine companion</p>
+<div class="flex justify-between items-center">
+<span class="text-indigo-600 font-bold">KSh 1,499</span>
+<button class="bg-indigo-100 hover:bg-indigo-200 text-indigo-600 py-2 px-4 rounded-lg transition">
+<i class="fas fa-cart-plus"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="pet-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
+<div class="h-48 overflow-hidden">
+<img alt="Cat Toys" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1591769225440-811ad7d6eab2?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"/>
+</div>
+<div class="p-5">
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Interactive Cat Toys</h3>
+<p class="text-gray-600 mb-4">Keep your feline friend entertained for hours</p>
+<div class="flex justify-between items-center">
+<span class="text-indigo-600 font-bold">KSh 899</span>
+<button class="bg-indigo-100 hover:bg-indigo-200 text-indigo-600 py-2 px-4 rounded-lg transition">
+<i class="fas fa-cart-plus"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="pet-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
+<div class="h-48 overflow-hidden">
+<img alt="Pet Grooming Kit" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1635&amp;q=80"/>
+</div>
+<div class="p-5">
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Pet Grooming Kit</h3>
+<p class="text-gray-600 mb-4">Everything you need to keep your pet looking their best</p>
+<div class="flex justify-between items-center">
+<span class="text-indigo-600 font-bold">KSh 1,299</span>
+<button class="bg-indigo-100 hover:bg-indigo-200 text-indigo-600 py-2 px-4 rounded-lg transition">
+<i class="fas fa-cart-plus"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="pet-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
+<div class="h-48 overflow-hidden">
+<img alt="Pet Bed" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1551383073-4e501b3c38c9?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"/>
+</div>
+<div class="p-5">
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Comfort Pet Bed</h3>
+<p class="text-gray-600 mb-4">Plush orthopedic bed for ultimate pet comfort</p>
+<div class="flex justify-between items-center">
+<span class="text-indigo-600 font-bold">KSh 2,999</span>
+<button class="bg-indigo-100 hover:bg-indigo-200 text-indigo-600 py-2 px-4 rounded-lg transition">
+<i class="fas fa-cart-plus"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<a class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-lg transition shadow-lg" href="#">
+                    View All Products <i class="fas fa-arrow-right ml-2"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 bg-gray-50" id="about">
+<div class="container mx-auto px-4">
+<div class="flex flex-col lg:flex-row items-center gap-12">
+<div class="lg:w-1/2">
+<img alt="Alpha Pet Pork Store" class="rounded-xl shadow-xl w-full h-auto" src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"/>
+</div>
+<div class="lg:w-1/2">
+<h2 class="text-3xl font-bold text-gray-800 mb-6">About Alpha Pet Pork</h2>
+<p class="text-gray-600 mb-4">
+                        Located in the heart of Ruiru, Kenya, Alpha Pet Pork has been serving pet owners with premium pet supplies since our founding. We're passionate about providing high-quality products that enhance the lives of pets and their owners.
+                    </p>
+<p class="text-gray-600 mb-6">
+                        Our knowledgeable staff are pet lovers themselves, ready to help you find exactly what you need for your furry, feathered, or scaled family members. From nutritious food to fun toys and essential accessories, we've got you covered.
+                    </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center">
+<div class="bg-indigo-100 p-3 rounded-full mr-4">
+<i class="fas fa-paw text-indigo-600"></i>
+</div>
+<span class="font-medium text-gray-800">Quality Products</span>
+</div>
+<div class="flex items-center">
+<div class="bg-indigo-100 p-3 rounded-full mr-4">
+<i class="fas fa-headset text-indigo-600"></i>
+</div>
+<span class="font-medium text-gray-800">Expert Advice</span>
+</div>
+<div class="flex items-center">
+<div class="bg-indigo-100 p-3 rounded-full mr-4">
+<i class="fas fa-heart text-indigo-600"></i>
+</div>
+<span class="font-medium text-gray-800">Pet Lovers</span>
+</div>
+<div class="flex items-center">
+<div class="bg-indigo-100 p-3 rounded-full mr-4">
+<i class="fas fa-truck text-indigo-600"></i>
+</div>
+<span class="font-medium text-gray-800">Fast Delivery</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Opening Hours -->
+<section class="py-16 bg-indigo-600 text-white" id="hours">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Opening Hours</h2>
+<p class="max-w-2xl mx-auto opacity-90">Visit us at our Ruiru location during these hours</p>
+</div>
+<div class="max-w-md mx-auto bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+<ul class="opening-hours space-y-3">
+<li class="flex justify-between items-center p-3 rounded-lg">
+<span class="font-medium">Monday</span>
+<span>8:00 AM - 6:00 PM</span>
+</li>
+<li class="flex justify-between items-center p-3 rounded-lg">
+<span class="font-medium">Tuesday</span>
+<span>8:00 AM - 6:00 PM</span>
+</li>
+<li class="flex justify-between items-center p-3 rounded-lg">
+<span class="font-medium">Wednesday</span>
+<span>8:00 AM - 6:00 PM</span>
+</li>
+<li class="flex justify-between items-center p-3 rounded-lg">
+<span class="font-medium">Thursday</span>
+<span>8:00 AM - 6:00 PM</span>
+</li>
+<li class="flex justify-between items-center p-3 rounded-lg">
+<span class="font-medium">Friday</span>
+<span>8:00 AM - 6:00 PM</span>
+</li>
+<li class="flex justify-between items-center p-3 rounded-lg">
+<span class="font-medium">Saturday</span>
+<span>8:00 AM - 6:00 PM</span>
+</li>
+<li class="flex justify-between items-center p-3 rounded-lg bg-white bg-opacity-20">
+<span class="font-medium">Sunday</span>
+<span>Closed</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Customers Say</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it - hear from our satisfied customers</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+<div class="flex items-center mb-4">
+<div class="text-yellow-400 mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<span class="text-gray-500 text-sm">5.0</span>
+</div>
+<p class="text-gray-700 mb-4">"The best pet store in Ruiru! Their dog food selection is unmatched and my labrador loves it. The staff are always helpful and knowledgeable."</p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+<i class="fas fa-user text-indigo-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">James M.</h4>
+<p class="text-gray-500 text-sm">Dog Owner</p>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+<div class="flex items-center mb-4">
+<div class="text-yellow-400 mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<span class="text-gray-500 text-sm">5.0</span>
+</div>
+<p class="text-gray-700 mb-4">"I've been shopping here for years. They have everything my cats need and the prices are reasonable. Highly recommend their grooming products!"</p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+<i class="fas fa-user text-indigo-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Sarah W.</h4>
+<p class="text-gray-500 text-sm">Cat Lover</p>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+<div class="flex items-center mb-4">
+<div class="text-yellow-400 mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+<span class="text-gray-500 text-sm">4.5</span>
+</div>
+<p class="text-gray-700 mb-4">"Great selection of bird supplies. The staff helped me choose the perfect cage and accessories for my parrot. Will definitely be back!"</p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+<i class="fas fa-user text-indigo-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">David K.</h4>
+<p class="text-gray-500 text-sm">Bird Enthusiast</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Map -->
+<section class="py-16 bg-gray-50" id="contact">
+<div class="container mx-auto px-4">
+<div class="flex flex-col lg:flex-row gap-12">
+<div class="lg:w-1/2">
+<h2 class="text-3xl font-bold text-gray-800 mb-6">Contact Us</h2>
+<p class="text-gray-600 mb-8">Have questions or need assistance? Reach out to us through any of these channels.</p>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="bg-indigo-100 p-3 rounded-full mr-4 mt-1">
+<i class="fas fa-map-marker-alt text-indigo-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800 mb-1">Our Location</h4>
+<p class="text-gray-600">Ruiru, Kenya</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-indigo-100 p-3 rounded-full mr-4 mt-1">
+<i class="fas fa-phone text-indigo-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800 mb-1">Call Us</h4>
+<p class="text-gray-600">+254 731 216189</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-indigo-100 p-3 rounded-full mr-4 mt-1">
+<i class="fas fa-envelope text-indigo-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800 mb-1">Email Us</h4>
+<p class="text-gray-600">info@alphapetpork.co.ke</p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h4 class="font-medium text-gray-800 mb-4">Follow Us</h4>
+<div class="flex space-x-4">
+<a class="bg-indigo-100 hover:bg-indigo-200 text-indigo-600 w-10 h-10 rounded-full flex items-center justify-center transition" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a class="bg-indigo-100 hover:bg-indigo-200 text-indigo-600 w-10 h-10 rounded-full flex items-center justify-center transition" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="bg-indigo-100 hover:bg-indigo-200 text-indigo-600 w-10 h-10 rounded-full flex items-center justify-center transition" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2">
+<div class="map-container">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.777173810195!2d36.925485!3d-1.16616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3feba83b0fe5%3A0x44643d3f5aae701b!2sAlpha%20Pet%20Pork!5e0!3m2!1sen!2ske!4v1689876543210!5m2!1sen!2ske" style="border:0;" width="100%"></iframe>
+</div>
+<div class="mt-8 bg-white p-6 rounded-xl shadow-sm">
+<h3 class="text-xl font-semibold text-gray-800 mb-4">Send Us a Message</h3>
+<form>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="name">Your Name</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" id="name" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="email">Email Address</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" id="email" type="email"/>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="message">Message</label>
+<textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" id="message" rows="4"></textarea>
+</div>
+<button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition shadow-lg" type="submit">
+                                Send Message <i class="fas fa-paper-plane ml-2"></i>
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<div class="flex items-center space-x-2 mb-4">
+<i class="fas fa-paw text-2xl text-indigo-400"></i>
+<span class="text-xl font-bold">Alpha Pet Pork</span>
+</div>
+<p class="text-gray-400">Your trusted partner for premium pet supplies in Ruiru, Kenya.</p>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-white transition" href="#home">Home</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#products">Products</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#about">About Us</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#hours">Opening Hours</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#contact">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Categories</h4>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-white transition" href="#">Dog Supplies</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#">Cat Supplies</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#">Bird Supplies</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#">Fish Supplies</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#">Small Pets</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+<p class="text-gray-400 mb-4">Subscribe to get updates on new products and special offers.</p>
+<form class="flex">
+<input class="px-4 py-2 rounded-l-lg w-full text-gray-800 outline-none" placeholder="Your email" type="email"/>
+<button class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-r-lg transition" type="submit">
+<i class="fas fa-paper-plane"></i>
+</button>
+</form>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 Alpha Pet Pork. All rights reserved.</p>
+<div class="flex space-x-6">
+<a class="text-gray-400 hover:text-white transition" href="#"><i class="fab fa-facebook-f"></i></a>
+<a class="text-gray-400 hover:text-white transition" href="#"><i class="fab fa-instagram"></i></a>
+<a class="text-gray-400 hover:text-white transition" href="#"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
