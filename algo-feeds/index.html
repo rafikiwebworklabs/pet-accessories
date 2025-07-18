@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Algo Feeds - Premium Animal Feed Store in Mangu, Kenya</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(76, 175, 80, 0.9) 0%, rgba(139, 195, 74, 0.9) 100%);
+        }
+        .map-container {
+            height: 400px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .rating-stars {
+            color: #FFD700;
+            text-shadow: 0 0 1px rgba(0,0,0,0.3);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+<!-- Navigation -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<i class="fas fa-paw text-green-600 text-2xl"></i>
+<span class="text-xl font-bold text-gray-800">Algo Feeds</span>
+</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-green-600 font-medium hover:text-green-700 transition-all" href="#home">Home</a>
+<a class="text-gray-600 hover:text-green-600 transition-all" href="#products">Products</a>
+<a class="text-gray-600 hover:text-green-600 transition-all" href="#about">About</a>
+<a class="text-gray-600 hover:text-green-600 transition-all" href="#contact">Contact</a>
+</div>
+<div class="md:hidden">
+<button class="text-gray-600 focus:outline-none" id="menu-toggle">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div class="hidden md:hidden bg-white py-2 px-4 shadow-lg" id="mobile-menu">
+<a class="block py-2 text-green-600 font-medium" href="#home">Home</a>
+<a class="block py-2 text-gray-600" href="#products">Products</a>
+<a class="block py-2 text-gray-600" href="#about">About</a>
+<a class="block py-2 text-gray-600" href="#contact">Contact</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-gradient text-white py-20" id="home">
+<div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-10 md:mb-0">
+<h1 class="text-4xl md:text-5xl font-bold mb-4">Premium Animal Feeds in Mangu</h1>
+<p class="text-xl mb-6">Quality nutrition for your livestock and pets at affordable prices</p>
+<div class="flex items-center mb-6">
+<div class="rating-stars mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+<span class="font-medium">4.6 (72 reviews)</span>
+</div>
+<div class="flex flex-wrap gap-3">
+<a class="bg-white text-green-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all" href="#products">
+                        View Products
+                    </a>
+<a class="border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-green-600 transition-all" href="#contact">
+                        Contact Us
+                    </a>
+</div>
+</div>
+<div class="md:w-1/2 flex justify-center">
+<img alt="Animal Feed" class="rounded-xl shadow-2xl max-w-full h-auto max-h-96 object-cover" src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1064&amp;q=80"/>
+</div>
+</div>
+</section>
+<!-- Products Section -->
+<section class="py-16 bg-white" id="products">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Products</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all">
+<img alt="Poultry Feed" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1064&amp;q=80"/>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 text-gray-800">Poultry Feed</h3>
+<p class="text-gray-600 mb-4">High-quality feed for chickens, turkeys, and other poultry birds.</p>
+<div class="flex justify-between items-center">
+<span class="font-bold text-green-600">KSh 2,500/bag</span>
+<button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-all">
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all">
+<img alt="Dairy Feed" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1553284965-5dd8352ff1bd?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1064&amp;q=80"/>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 text-gray-800">Dairy Feed</h3>
+<p class="text-gray-600 mb-4">Nutritionally balanced feed for dairy cows to maximize milk production.</p>
+<div class="flex justify-between items-center">
+<span class="font-bold text-green-600">KSh 3,200/bag</span>
+<button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-all">
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition-all">
+<img alt="Pet Food" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1556910638-b9efc0a6f516?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1064&amp;q=80"/>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 text-gray-800">Pet Food</h3>
+<p class="text-gray-600 mb-4">Premium quality food for dogs, cats, and other household pets.</p>
+<div class="flex justify-between items-center">
+<span class="font-bold text-green-600">From KSh 1,800</span>
+<button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-all">
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<a class="inline-block border-2 border-green-600 text-green-600 font-bold px-8 py-3 rounded-lg hover:bg-green-600 hover:text-white transition-all" href="#">
+                    View All Products
+                </a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 bg-gray-50" id="about">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+<h2 class="text-3xl font-bold mb-6 text-gray-800">About Algo Feeds</h2>
+<p class="text-gray-600 mb-4">
+                        Located in the heart of Mangu, Kenya, Algo Feeds has been serving the community with premium quality animal feeds since our establishment. We take pride in providing nutritionally balanced feeds for all types of livestock and pets.
+                    </p>
+<p class="text-gray-600 mb-6">
+                        Our products are carefully formulated by animal nutrition experts to ensure optimal growth, health, and productivity of your animals. We source only the highest quality ingredients and maintain strict quality control measures.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center bg-white p-4 rounded-lg shadow">
+<i class="fas fa-check-circle text-green-600 text-2xl mr-3"></i>
+<span class="font-medium">Quality Guaranteed</span>
+</div>
+<div class="flex items-center bg-white p-4 rounded-lg shadow">
+<i class="fas fa-truck text-green-600 text-2xl mr-3"></i>
+<span class="font-medium">Fast Delivery</span>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="bg-white p-6 rounded-xl shadow-lg">
+<h3 class="text-xl font-bold mb-4 text-gray-800">Store Hours</h3>
+<ul class="space-y-3">
+<li class="flex justify-between border-b pb-2">
+<span class="font-medium">Monday - Friday</span>
+<span>8:00 AM - 6:00 PM</span>
+</li>
+<li class="flex justify-between border-b pb-2">
+<span class="font-medium">Saturday</span>
+<span>9:00 AM - 4:00 PM</span>
+</li>
+<li class="flex justify-between">
+<span class="font-medium">Sunday</span>
+<span>Closed</span>
+</li>
+</ul>
+<div class="mt-8">
+<h3 class="text-xl font-bold mb-4 text-gray-800">Why Choose Us?</h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+<span>Locally produced feeds tailored to Kenyan conditions</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+<span>Competitive prices with bulk purchase discounts</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+<span>Knowledgeable staff to advise on animal nutrition</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+<span>Regular promotions and loyalty rewards</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Map Section -->
+<section class="py-16 bg-white" id="contact">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Visit Us Today</h2>
+<div class="flex flex-col lg:flex-row gap-8">
+<div class="lg:w-1/2">
+<div class="map-container">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.567345715873!2d36.95016!3d-0.98922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f355d83f41f35%3A0x6e43326d5eb9a7c!2sAlgo%20Feeds!5e0!3m2!1sen!2ske!4v1689876543210!5m2!1sen!2ske" style="border:0;" width="100%"></iframe>
+</div>
+</div>
+<div class="lg:w-1/2">
+<div class="bg-gray-50 p-8 rounded-xl h-full">
+<h3 class="text-2xl font-bold mb-6 text-gray-800">Contact Information</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<i class="fas fa-map-marker-alt text-green-600 mt-1 mr-4 text-xl"></i>
+<div>
+<h4 class="font-bold text-gray-800">Address</h4>
+<p class="text-gray-600">53 Algo Feeds, 2X62+836 Mangu, Kenya</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-phone-alt text-green-600 mt-1 mr-4 text-xl"></i>
+<div>
+<h4 class="font-bold text-gray-800">Phone</h4>
+<p class="text-gray-600">+254 790 212921</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-envelope text-green-600 mt-1 mr-4 text-xl"></i>
+<div>
+<h4 class="font-bold text-gray-800">Email</h4>
+<p class="text-gray-600">info@algofeeds.co.ke</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-clock text-green-600 mt-1 mr-4 text-xl"></i>
+<div>
+<h4 class="font-bold text-gray-800">Business Hours</h4>
+<p class="text-gray-600">Mon-Fri: 8:00 AM - 6:00 PM<br/>Sat: 9:00 AM - 4:00 PM<br/>Sun: Closed</p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h3 class="text-xl font-bold mb-4 text-gray-800">Send Us a Message</h3>
+<form class="space-y-4">
+<div>
+<input class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" placeholder="Your Name" type="text"/>
+</div>
+<div>
+<input class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" placeholder="Your Email" type="email"/>
+</div>
+<div>
+<input class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" placeholder="Subject" type="text"/>
+</div>
+<div>
+<textarea class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" placeholder="Your Message" rows="4"></textarea>
+</div>
+<button class="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition-all w-full" type="submit">
+                                    Send Message
+                                </button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">What Our Customers Say</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-white p-6 rounded-xl shadow-lg">
+<div class="rating-stars mb-3">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p class="text-gray-600 mb-4">"Algo Feeds has transformed my poultry farming business. The quality of their feeds is unmatched, and my chickens are healthier and more productive than ever before."</p>
+<div class="flex items-center">
+<img alt="Customer" class="w-10 h-10 rounded-full mr-3" src="https://randomuser.me/api/portraits/men/32.jpg"/>
+<div>
+<h4 class="font-bold text-gray-800">John Kamau</h4>
+<p class="text-sm text-gray-500">Poultry Farmer</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-white p-6 rounded-xl shadow-lg">
+<div class="rating-stars mb-3">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p class="text-gray-600 mb-4">"I've been using Algo Feeds for my dairy cows for over 2 years now. The milk production has increased by 20%, and the cows are in excellent health. Highly recommended!"</p>
+<div class="flex items-center">
+<img alt="Customer" class="w-10 h-10 rounded-full mr-3" src="https://randomuser.me/api/portraits/women/44.jpg"/>
+<div>
+<h4 class="font-bold text-gray-800">Mary Wanjiku</h4>
+<p class="text-sm text-gray-500">Dairy Farmer</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-white p-6 rounded-xl shadow-lg">
+<div class="rating-stars mb-3">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+<p class="text-gray-600 mb-4">"The pet food from Algo Feeds is the only brand my picky dog will eat without hesitation. The staff is knowledgeable and always helpful with recommendations."</p>
+<div class="flex items-center">
+<img alt="Customer" class="w-10 h-10 rounded-full mr-3" src="https://randomuser.me/api/portraits/men/75.jpg"/>
+<div>
+<h4 class="font-bold text-gray-800">David Ochieng</h4>
+<p class="text-sm text-gray-500">Pet Owner</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<div class="flex items-center space-x-2 mb-4">
+<i class="fas fa-paw text-green-400 text-2xl"></i>
+<span class="text-xl font-bold">Algo Feeds</span>
+</div>
+<p class="text-gray-400">Providing quality animal feeds to farmers and pet owners in Mangu and surrounding areas since 2010.</p>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-green-400 transition-all" href="#home">Home</a></li>
+<li><a class="text-gray-400 hover:text-green-400 transition-all" href="#products">Products</a></li>
+<li><a class="text-gray-400 hover:text-green-400 transition-all" href="#about">About Us</a></li>
+<li><a class="text-gray-400 hover:text-green-400 transition-all" href="#contact">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-4">Products</h3>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-green-400 transition-all" href="#">Poultry Feeds</a></li>
+<li><a class="text-gray-400 hover:text-green-400 transition-all" href="#">Dairy Feeds</a></li>
+<li><a class="text-gray-400 hover:text-green-400 transition-all" href="#">Pet Food</a></li>
+<li><a class="text-gray-400 hover:text-green-400 transition-all" href="#">Animal Supplements</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-4">Connect With Us</h3>
+<div class="flex space-x-4 mb-4">
+<a class="text-gray-400 hover:text-green-400 text-xl transition-all" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a class="text-gray-400 hover:text-green-400 text-xl transition-all" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+<a class="text-gray-400 hover:text-green-400 text-xl transition-all" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="text-gray-400 hover:text-green-400 text-xl transition-all" href="#">
+<i class="fab fa-whatsapp"></i>
+</a>
+</div>
+<p class="text-gray-400">Subscribe to our newsletter</p>
+<div class="mt-2 flex">
+<input class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full" placeholder="Your email" type="email"/>
+<button class="bg-green-600 px-4 py-2 rounded-r-lg hover:bg-green-700 transition-all">
+<i class="fas fa-paper-plane"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+<p>© 2023 Algo Feeds. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Back to Top Button -->
+<button class="fixed bottom-6 right-6 bg-green-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center hover:bg-green-700 transition-all hidden" id="back-to-top">
+<i class="fas fa-arrow-up"></i>
+</button>
+<script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
