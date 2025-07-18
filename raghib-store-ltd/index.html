@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Raghib Store Ltd - Hardware &amp; Building Supplies in Malindi</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .rating-stars {
+            color: #FFD700;
+        }
+        .map-container {
+            height: 400px;
+            width: 100%;
+        }
+        .business-hours li {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .business-hours li:last-child {
+            border-bottom: none;
+        }
+        .category-badge {
+            transition: all 0.3s ease;
+        }
+        .category-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+<!-- Navigation -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<i class="fas fa-store text-blue-600 text-2xl mr-2"></i>
+<span class="text-xl font-bold text-gray-800">Raghib Store Ltd</span>
+</div>
+<div class="hidden md:flex space-x-6">
+<a class="text-gray-700 hover:text-blue-600 transition" href="#about">About</a>
+<a class="text-gray-700 hover:text-blue-600 transition" href="#products">Products</a>
+<a class="text-gray-700 hover:text-blue-600 transition" href="#hours">Hours</a>
+<a class="text-gray-700 hover:text-blue-600 transition" href="#location">Location</a>
+<a class="text-gray-700 hover:text-blue-600 transition" href="#contact">Contact</a>
+</div>
+<button class="md:hidden text-gray-700" id="mobile-menu-button">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+</div>
+<!-- Mobile menu -->
+<div class="md:hidden hidden bg-white py-2 px-4 shadow-md" id="mobile-menu">
+<a class="block py-2 text-gray-700 hover:text-blue-600 transition" href="#about">About</a>
+<a class="block py-2 text-gray-700 hover:text-blue-600 transition" href="#products">Products</a>
+<a class="block py-2 text-gray-700 hover:text-blue-600 transition" href="#hours">Hours</a>
+<a class="block py-2 text-gray-700 hover:text-blue-600 transition" href="#location">Location</a>
+<a class="block py-2 text-gray-700 hover:text-blue-600 transition" href="#contact">Contact</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-section text-white py-20 md:py-32">
+<div class="container mx-auto px-4 text-center">
+<h1 class="text-4xl md:text-6xl font-bold mb-4">Your One-Stop Hardware Shop</h1>
+<p class="text-xl md:text-2xl mb-8">Quality building materials &amp; supplies in Malindi since 1997</p>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300" href="#products">
+                    Explore Products
+                </a>
+<a class="bg-transparent hover:bg-white hover:text-gray-900 border-2 border-white text-white font-bold py-3 px-6 rounded-lg transition duration-300" href="#location">
+                    Visit Us
+                </a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 bg-white" id="about">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+<h2 class="text-3xl font-bold text-gray-800 mb-6">About Raghib Store Ltd</h2>
+<p class="text-gray-600 mb-4">
+                        Located in the heart of Malindi on Kenyatta Avenue, Raghib Store Ltd has been serving the community with quality hardware and building supplies since 1997.
+                    </p>
+<p class="text-gray-600 mb-6">
+                        With a 4.5-star rating from our valued customers, we pride ourselves on offering a wide range of products to meet all your construction and home improvement needs.
+                    </p>
+<div class="flex items-center mb-4">
+<div class="rating-stars mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+<span class="text-gray-700 font-medium">4.5 (97 reviews)</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
+<span class="text-gray-700">383 Kenyatta Avenue, Malindi 80200, Kenya</span>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Raghib Store Ltd" class="w-full h-auto rounded-lg shadow-lg" src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noHucF1Tt9a72OZ_6XWjwuabd5qr3TwfyPm5rxBdSIJTKOCnAldA4ryQi93ZRjG7LnsE1EEiFzYgVULMcM3UznzbX5TdPH5UColkQa2tda7pVJOLJ_qpt1MQT_eR_hRT8BZp_wW6Q=w408-h306-k-no"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Products Section -->
+<section class="py-16 bg-gray-50" id="products">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Products &amp; Services</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="category-badge bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg">
+<i class="fas fa-tools text-4xl text-blue-600 mb-4"></i>
+<h3 class="text-xl font-semibold mb-2">Hardware Store</h3>
+<p class="text-gray-600">All your essential tools and hardware needs</p>
+</div>
+<div class="category-badge bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg">
+<i class="fas fa-bath text-4xl text-blue-600 mb-4"></i>
+<h3 class="text-xl font-semibold mb-2">Bathroom Supplies</h3>
+<p class="text-gray-600">Quality bathroom fixtures and accessories</p>
+</div>
+<div class="category-badge bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg">
+<i class="fas fa-cubes text-4xl text-blue-600 mb-4"></i>
+<h3 class="text-xl font-semibold mb-2">Cement Supplier</h3>
+<p class="text-gray-600">Premium cement for all construction projects</p>
+</div>
+<div class="category-badge bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg">
+<i class="fas fa-tractor text-4xl text-blue-600 mb-4"></i>
+<h3 class="text-xl font-semibold mb-2">Farm Equipment</h3>
+<p class="text-gray-600">Reliable farming tools and machinery</p>
+</div>
+<div class="category-badge bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg">
+<i class="fas fa-bolt text-4xl text-blue-600 mb-4"></i>
+<h3 class="text-xl font-semibold mb-2">Electric Generators</h3>
+<p class="text-gray-600">Power solutions for home and business</p>
+</div>
+<div class="category-badge bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg">
+<i class="fas fa-border-style text-4xl text-blue-600 mb-4"></i>
+<h3 class="text-xl font-semibold mb-2">Gypsum Products</h3>
+<p class="text-gray-600">High-quality gypsum for your walls</p>
+</div>
+<div class="category-badge bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg">
+<i class="fas fa-paint-roller text-4xl text-blue-600 mb-4"></i>
+<h3 class="text-xl font-semibold mb-2">Paint Store</h3>
+<p class="text-gray-600">Wide selection of paints and coatings</p>
+</div>
+<div class="category-badge bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg">
+<i class="fas fa-faucet text-4xl text-blue-600 mb-4"></i>
+<h3 class="text-xl font-semibold mb-2">Plumbing Supplies</h3>
+<p class="text-gray-600">Complete plumbing solutions</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Business Hours Section -->
+<section class="py-16 bg-white" id="hours">
+<div class="container mx-auto px-4">
+<div class="max-w-3xl mx-auto">
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Business Hours</h2>
+<div class="bg-gray-50 p-6 rounded-lg shadow-md">
+<ul class="business-hours">
+<li>
+<span class="font-medium">Monday</span>
+<span>7:30 AM - 5:30 PM</span>
+</li>
+<li>
+<span class="font-medium">Tuesday</span>
+<span>7:30 AM - 5:30 PM</span>
+</li>
+<li>
+<span class="font-medium">Wednesday</span>
+<span>7:30 AM - 5:30 PM</span>
+</li>
+<li>
+<span class="font-medium">Thursday</span>
+<span>7:30 AM - 5:30 PM</span>
+</li>
+<li>
+<span class="font-medium">Friday</span>
+<span>7:30 AM - 5:30 PM</span>
+</li>
+<li>
+<span class="font-medium">Saturday</span>
+<span>7:30 AM - 5:30 PM</span>
+</li>
+<li>
+<span class="font-medium">Sunday</span>
+<span class="text-red-500">Closed</span>
+</li>
+</ul>
+<div class="mt-6 bg-blue-50 p-4 rounded-lg">
+<div class="flex items-start">
+<i class="fas fa-info-circle text-blue-600 mt-1 mr-2"></i>
+<p class="text-blue-800">Quick visits are welcome during business hours. We're closed on Sundays.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-16 bg-gray-50" id="location">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Our Location</h2>
+<div class="flex flex-col md:flex-row gap-8">
+<div class="md:w-1/2">
+<div class="map-container rounded-lg shadow-lg">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.123456789012!2d40.11703!3d-3.21846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18158fbb0750dc2d%3A0xef9cf7e08a150d9e!2sRaghib%20Store%20Ltd!5e0!3m2!1sen!2ske!4v1234567890123!5m2!1sen!2ske" style="border:0;" width="100%"></iframe>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h3 class="text-2xl font-semibold mb-4">Visit Us Today</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3"></i>
+<div>
+<p class="font-medium">Address</p>
+<p class="text-gray-600">383 Kenyatta Avenue, Malindi 80200, Kenya</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-phone-alt text-blue-600 mt-1 mr-3"></i>
+<div>
+<p class="font-medium">Phone</p>
+<p class="text-gray-600">+254 787 960868</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-envelope text-blue-600 mt-1 mr-3"></i>
+<div>
+<p class="font-medium">Email</p>
+<p class="text-gray-600">info@raghibstore.co.ke</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-globe text-blue-600 mt-1 mr-3"></i>
+<div>
+<p class="font-medium">Website</p>
+<p class="text-gray-600">www.raghibstore.co.ke</p>
+</div>
+</div>
+</div>
+<a class="mt-6 inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300" href="https://www.google.com/maps/search/?api=1&amp;query=Raghib%20Store%20Ltd&amp;query_place_id=ChIJLdxQB7uPFRgRng0ViuD3nO8" target="_blank">
+<i class="fas fa-directions mr-2"></i> Get Directions
+                        </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 bg-white" id="contact">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Contact Us</h2>
+<div class="bg-gray-50 p-8 rounded-lg shadow-md">
+<form class="space-y-6" id="contactForm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="name">Your Name</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" id="name" name="name" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="email">Your Email</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" id="email" name="email" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="subject">Subject</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" id="subject" name="subject" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="message">Message</label>
+<textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" id="message" name="message" rows="5"></textarea>
+</div>
+<button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300" type="submit">
+                            Send Message
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<h3 class="text-xl font-bold mb-4">Raghib Store Ltd</h3>
+<p class="mb-4">Your trusted hardware and building supplies partner in Malindi since 1997.</p>
+<div class="flex space-x-4">
+<a class="text-white hover:text-blue-400 transition" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a class="text-white hover:text-blue-400 transition" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+<a class="text-white hover:text-blue-400 transition" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="text-white hover:text-blue-400 transition" href="#">
+<i class="fab fa-linkedin-in"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a class="hover:text-blue-400 transition" href="#about">About Us</a></li>
+<li><a class="hover:text-blue-400 transition" href="#products">Products</a></li>
+<li><a class="hover:text-blue-400 transition" href="#hours">Business Hours</a></li>
+<li><a class="hover:text-blue-400 transition" href="#location">Location</a></li>
+<li><a class="hover:text-blue-400 transition" href="#contact">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4">Contact Info</h3>
+<ul class="space-y-2">
+<li class="flex items-start">
+<i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+<span>383 Kenyatta Avenue, Malindi 80200, Kenya</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-phone-alt mt-1 mr-3"></i>
+<span>+254 787 960868</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-envelope mt-1 mr-3"></i>
+<span>info@raghibstore.co.ke</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-8 pt-8 text-center">
+<p>© 2023 Raghib Store Ltd. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Back to Top Button -->
+<button class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300" id="backToTop">
+<i class="fas fa-arrow-up"></i>
+</button>
+<script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send the form data to a server
+            // For this example, we'll just show an alert
+            alert(`Thank you, ${name}! Your message has been received. We'll contact you soon at ${email}.`);
+            
+            // Reset form
+            contactForm.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
