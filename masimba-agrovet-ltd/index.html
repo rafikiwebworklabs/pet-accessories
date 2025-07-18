@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Masimba Agrovet Ltd - Pet Store &amp; Agrochemicals Supplier</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1589927986089-35812388d1f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .rating-stars {
+            color: #FFD700;
+        }
+        
+        .business-hours li {
+            transition: all 0.3s ease;
+        }
+        
+        .business-hours li:hover {
+            background-color: #f0fdf4;
+            transform: translateX(5px);
+        }
+        
+        .map-container {
+            height: 400px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+<!-- Header/Navigation -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<i class="fas fa-paw text-green-600 text-2xl mr-2"></i>
+<h1 class="text-xl font-bold text-green-800">Masimba Agrovet Ltd</h1>
+</div>
+<nav class="hidden md:flex space-x-8">
+<a class="text-green-700 hover:text-green-500 font-medium" href="#home">Home</a>
+<a class="text-gray-600 hover:text-green-500 font-medium" href="#about">About</a>
+<a class="text-gray-600 hover:text-green-500 font-medium" href="#services">Services</a>
+<a class="text-gray-600 hover:text-green-500 font-medium" href="#hours">Hours</a>
+<a class="text-gray-600 hover:text-green-500 font-medium" href="#contact">Contact</a>
+</nav>
+<button class="md:hidden text-gray-600" id="mobile-menu-button">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+</div>
+<!-- Mobile Menu -->
+<div class="md:hidden hidden bg-white py-2 px-4 shadow-md" id="mobile-menu">
+<a class="block py-2 text-green-700 hover:text-green-500" href="#home">Home</a>
+<a class="block py-2 text-gray-600 hover:text-green-500" href="#about">About</a>
+<a class="block py-2 text-gray-600 hover:text-green-500" href="#services">Services</a>
+<a class="block py-2 text-gray-600 hover:text-green-500" href="#hours">Hours</a>
+<a class="block py-2 text-gray-600 hover:text-green-500" href="#contact">Contact</a>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero py-20 md:py-32 text-white" id="home">
+<div class="container mx-auto px-4 text-center">
+<h1 class="text-4xl md:text-6xl font-bold mb-4">Quality Pet Supplies &amp; Agrochemicals</h1>
+<p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Your trusted source for pet food, animal feeds, and agricultural solutions in Nairobi</p>
+<div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+<a class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-medium transition duration-300" href="#contact">Visit Us Today</a>
+<a class="bg-white hover:bg-gray-100 text-green-700 px-8 py-3 rounded-full font-medium transition duration-300" href="tel:+254721794880">
+<i class="fas fa-phone mr-2"></i> Call Now
+                </a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 bg-white" id="about">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+<h2 class="text-3xl font-bold text-green-800 mb-6">About Masimba Agrovet Ltd</h2>
+<p class="text-gray-700 mb-4">Located conveniently at PWF5+4C6, Opposite Mama Villa, After Masimba Bus Stage on Kayole Spine Rd in Nairobi, we've been serving the community with top-quality pet and agricultural supplies.</p>
+<p class="text-gray-700 mb-6">With a 4.2-star rating from satisfied customers, we pride ourselves on offering excellent products and customer service.</p>
+<div class="flex items-center mb-4">
+<div class="rating-stars mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+<span class="text-gray-700">4.2 (160+ reviews)</span>
+</div>
+<div class="flex items-center space-x-4">
+<div class="bg-green-100 text-green-800 px-4 py-2 rounded-full">
+<i class="fas fa-check-circle mr-2"></i> Trusted
+                        </div>
+<div class="bg-green-100 text-green-800 px-4 py-2 rounded-full">
+<i class="fas fa-award mr-2"></i> Quality
+                        </div>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="map-container">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.813418440618!2d36.90851!3d-1.27721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f147f9e33b9b9%3A0x741cbaec02effcd7!2sMasimba%20Agrovet%20Ltd!5e0!3m2!1sen!2ske!4v1689876543216!5m2!1sen!2ske" style="border:0;" width="100%"></iframe>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-16 bg-gray-50" id="services">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-green-800 mb-12">Our Products &amp; Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Pet Store -->
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+<div class="text-green-600 text-4xl mb-4">
+<i class="fas fa-paw"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Pet Store</h3>
+<p class="text-gray-600 mb-4">We offer a wide range of pet supplies including food, accessories, and care products for all your furry friends.</p>
+<ul class="text-gray-700 space-y-2">
+<li class="flex items-center">
+<i class="fas fa-check text-green-500 mr-2"></i> Premium pet foods
+                        </li>
+<li class="flex items-center">
+<i class="fas fa-check text-green-500 mr-2"></i> Toys and accessories
+                        </li>
+<li class="flex items-center">
+<i class="fas fa-check text-green-500 mr-2"></i> Grooming products
+                        </li>
+</ul>
+</div>
+<!-- Animal Feeds -->
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+<div class="text-green-600 text-4xl mb-4">
+<i class="fas fa-horse"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Animal Feeds</h3>
+<p class="text-gray-600 mb-4">High-quality feeds for livestock, poultry, and other animals to ensure optimal health and productivity.</p>
+<ul class="text-gray-700 space-y-2">
+<li class="flex items-center">
+<i class="fas fa-check text-green-500 mr-2"></i> Poultry feeds
+                        </li>
+<li class="flex items-center">
+<i class="fas fa-check text-green-500 mr-2"></i> Dairy cattle feeds
+                        </li>
+<li class="flex items-center">
+<i class="fas fa-check text-green-500 mr-2"></i> Pig and rabbit feeds
+                        </li>
+</ul>
+</div>
+<!-- Agrochemicals -->
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+<div class="text-green-600 text-4xl mb-4">
+<i class="fas fa-spray-can"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Agrochemicals</h3>
+<p class="text-gray-600 mb-4">Comprehensive range of agricultural chemicals to protect and enhance your crops and livestock.</p>
+<ul class="text-gray-700 space-y-2">
+<li class="flex items-center">
+<i class="fas fa-check text-green-500 mr-2"></i> Pesticides
+                        </li>
+<li class="flex items-center">
+<i class="fas fa-check text-green-500 mr-2"></i> Fertilizers
+                        </li>
+<li class="flex items-center">
+<i class="fas fa-check text-green-500 mr-2"></i> Veterinary medicines
+                        </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Business Hours Section -->
+<section class="py-16 bg-white" id="hours">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-3xl font-bold text-center text-green-800 mb-12">Business Hours</h2>
+<div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+<ul class="business-hours space-y-3">
+<li class="flex justify-between items-center bg-white p-4 rounded-lg">
+<span class="font-medium">Monday</span>
+<span class="text-gray-600">7:00 AM - 8:00 PM</span>
+</li>
+<li class="flex justify-between items-center bg-white p-4 rounded-lg">
+<span class="font-medium">Tuesday</span>
+<span class="text-gray-600">7:00 AM - 8:00 PM</span>
+</li>
+<li class="flex justify-between items-center bg-white p-4 rounded-lg">
+<span class="font-medium">Wednesday</span>
+<span class="text-gray-600">7:00 AM - 8:00 PM</span>
+</li>
+<li class="flex justify-between items-center bg-white p-4 rounded-lg">
+<span class="font-medium">Thursday</span>
+<span class="text-gray-600">7:00 AM - 8:00 PM</span>
+</li>
+<li class="flex justify-between items-center bg-white p-4 rounded-lg">
+<span class="font-medium">Friday</span>
+<span class="text-gray-600">7:00 AM - 8:00 PM</span>
+</li>
+<li class="flex justify-between items-center bg-white p-4 rounded-lg">
+<span class="font-medium">Saturday</span>
+<span class="text-gray-600">7:00 AM - 8:00 PM</span>
+</li>
+<li class="flex justify-between items-center bg-white p-4 rounded-lg">
+<span class="font-medium">Sunday</span>
+<span class="text-gray-600">7:00 AM - 8:00 PM</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 text-center">
+<p class="text-gray-600 mb-4">We're open 7 days a week to serve you better!</p>
+<a class="inline-flex items-center text-green-600 hover:text-green-800" href="https://www.google.com/maps/search/?api=1&amp;query=Masimba%20Agrovet%20Ltd&amp;query_place_id=ChIJubkznn8ULxgR1_zvAuy6HHQ" target="_blank">
+<i class="fas fa-map-marker-alt mr-2"></i> Get Directions on Google Maps
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 bg-green-700 text-white" id="contact">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<h3 class="text-xl font-semibold mb-4">Visit Our Store</h3>
+<address class="not-italic mb-6">
+<p class="mb-2"><i class="fas fa-map-marker-alt mr-3"></i> PWF5+4C6, Opposite Mama Villa</p>
+<p class="mb-2 pl-8">After Masimba Bus Stage, Kayole Spine Rd</p>
+<p class="pl-8">Nairobi, Kenya</p>
+</address>
+<h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+<div class="space-y-3">
+<p><i class="fas fa-phone mr-3"></i> <a class="hover:underline" href="tel:+254721794880">+254 721 794880</a></p>
+<p><i class="fas fa-envelope mr-3"></i> <a class="hover:underline" href="mailto:info@masimbaagrovet.com">info@masimbaagrovet.com</a></p>
+</div>
+<div class="mt-8">
+<h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+<div class="flex space-x-4">
+<a class="bg-white text-green-700 hover:bg-gray-100 w-10 h-10 rounded-full flex items-center justify-center" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a class="bg-white text-green-700 hover:bg-gray-100 w-10 h-10 rounded-full flex items-center justify-center" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+<a class="bg-white text-green-700 hover:bg-gray-100 w-10 h-10 rounded-full flex items-center justify-center" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<h3 class="text-xl font-semibold text-gray-800 mb-4">Send Us a Message</h3>
+<form>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="name">Your Name</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" id="name" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="email">Email Address</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" id="email" type="email"/>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="message">Your Message</label>
+<textarea class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" id="message" rows="4"></textarea>
+</div>
+<button class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md transition duration-300" type="submit">
+                            Send Message
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-green-900 text-white py-8">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-4 md:mb-0">
+<div class="flex items-center">
+<i class="fas fa-paw text-green-400 text-2xl mr-2"></i>
+<h2 class="text-xl font-bold">Masimba Agrovet Ltd</h2>
+</div>
+<p class="text-green-300 mt-2">Your trusted pet and agricultural supplies store</p>
+</div>
+<div class="text-center md:text-right">
+<p>© 2023 Masimba Agrovet Ltd. All rights reserved.</p>
+<p class="text-green-300 mt-1">PWF5+4C6, Kayole Spine Rd, Nairobi, Kenya</p>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
