@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eagle Hardware Dealers LTD | Hardware Store in Eldoret, Kenya</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .rating-stars {
+            color: #FFD700;
+        }
+        
+        .business-hours li {
+            transition: all 0.3s ease;
+        }
+        
+        .business-hours li:hover {
+            background-color: #f3f4f6;
+            transform: translateX(5px);
+        }
+        
+        .map-container {
+            height: 400px;
+        }
+        
+        @media (max-width: 768px) {
+            .map-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+<!-- Navigation -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+<div class="max-w-6xl mx-auto px-4">
+<div class="flex justify-between items-center py-4">
+<div class="flex items-center space-x-4">
+<div class="text-2xl font-bold text-blue-800">
+<i class="fas fa-hard-hat mr-2"></i>
+<span>Eagle Hardware</span>
+</div>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-gray-700 hover:text-blue-600 transition" href="#about">About</a>
+<a class="text-gray-700 hover:text-blue-600 transition" href="#products">Products</a>
+<a class="text-gray-700 hover:text-blue-600 transition" href="#hours">Hours</a>
+<a class="text-gray-700 hover:text-blue-600 transition" href="#contact">Contact</a>
+</div>
+<div class="md:hidden">
+<button class="text-gray-700 focus:outline-none" id="menu-btn">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div class="hidden md:hidden bg-white pb-4 px-4" id="mobile-menu">
+<a class="block py-2 text-gray-700 hover:text-blue-600 transition" href="#about">About</a>
+<a class="block py-2 text-gray-700 hover:text-blue-600 transition" href="#products">Products</a>
+<a class="block py-2 text-gray-700 hover:text-blue-600 transition" href="#hours">Hours</a>
+<a class="block py-2 text-gray-700 hover:text-blue-600 transition" href="#contact">Contact</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero text-white py-20 md:py-32 px-4">
+<div class="max-w-6xl mx-auto text-center">
+<h1 class="text-4xl md:text-6xl font-bold mb-6">Eagle Hardware Dealers LTD</h1>
+<p class="text-xl md:text-2xl mb-8">Your trusted hardware partner in Eldoret, Kenya</p>
+<div class="flex items-center justify-center mb-8">
+<div class="rating-stars mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+<span class="text-lg">4.2 (303 reviews)</span>
+</div>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300" href="#contact">
+<i class="fas fa-phone-alt mr-2"></i> Contact Us
+                </a>
+<a class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-6 rounded-lg transition duration-300" href="https://www.google.com/maps/search/?api=1&amp;query=Eagle%20Hardware%20Dealers%20LTD&amp;query_place_id=ChIJ95fn6qUBgRcRo8dXFhcLvN8" target="_blank">
+<i class="fas fa-map-marker-alt mr-2"></i> Get Directions
+                </a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 px-4 bg-white" id="about">
+<div class="max-w-6xl mx-auto">
+<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">About Our Hardware Store</h2>
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="md:w-1/2">
+<img alt="Eagle Hardware Store" class="rounded-lg shadow-xl w-full h-auto" src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqYR7Iw_EvKIFpGGBDz1-LAJuMRxwaGGAw68LxvSKYcK6zJJANpnex48DZmB8r07kkW_9pcLXAMTtnGrfO4j7ytBlFT9hqWkhr--t84bJkXTbOOAfbeGPBtahB3PjLUbHjTTXlJ=w426-h240-k-no"/>
+</div>
+<div class="md:w-1/2">
+<h3 class="text-2xl font-semibold mb-4 text-gray-800">Quality Hardware Solutions Since Day One</h3>
+<p class="text-gray-600 mb-4">Located in the heart of Eldoret at the Eagle Building on Sosiani Street, Eagle Hardware Dealers LTD has been serving the community with top-quality hardware products and exceptional service.</p>
+<p class="text-gray-600 mb-6">Our knowledgeable staff and extensive inventory make us the go-to destination for all your construction and home improvement needs in Kipkenyo and beyond.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center">
+<i class="fas fa-check-circle text-green-500 mr-2 text-xl"></i>
+<span class="text-gray-700">Quality Products</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-check-circle text-green-500 mr-2 text-xl"></i>
+<span class="text-gray-700">Expert Advice</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-check-circle text-green-500 mr-2 text-xl"></i>
+<span class="text-gray-700">Competitive Prices</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-check-circle text-green-500 mr-2 text-xl"></i>
+<span class="text-gray-700">Reliable Service</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Products Section -->
+<section class="py-16 px-4 bg-gray-50" id="products">
+<div class="max-w-6xl mx-auto">
+<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Products &amp; Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Product Category 1 -->
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+<div class="text-blue-600 mb-4">
+<i class="fas fa-hammer text-4xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3 text-gray-800">Building Materials</h3>
+<p class="text-gray-600">High-quality construction materials for all your building projects, from foundations to roofing.</p>
+</div>
+<!-- Product Category 2 -->
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+<div class="text-blue-600 mb-4">
+<i class="fas fa-paint-roller text-4xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3 text-gray-800">Paint Supplies</h3>
+<p class="text-gray-600">Wide selection of interior and exterior paints, primers, and application tools for perfect finishes.</p>
+</div>
+<!-- Product Category 3 -->
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+<div class="text-blue-600 mb-4">
+<i class="fas fa-tools text-4xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3 text-gray-800">Tools &amp; Equipment</h3>
+<p class="text-gray-600">Professional-grade hand tools, power tools, and safety equipment for contractors and DIYers.</p>
+</div>
+<!-- Product Category 4 -->
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+<div class="text-blue-600 mb-4">
+<i class="fas fa-truck text-4xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3 text-gray-800">Wholesale Options</h3>
+<p class="text-gray-600">Bulk purchasing options available for contractors and large-scale projects with competitive pricing.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Business Hours Section -->
+<section class="py-16 px-4 bg-white" id="hours">
+<div class="max-w-6xl mx-auto">
+<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Business Hours</h2>
+<div class="flex flex-col md:flex-row gap-8">
+<div class="md:w-1/2">
+<div class="bg-blue-50 p-6 rounded-lg shadow-md">
+<h3 class="text-xl font-semibold mb-4 text-blue-800">Visit Our Store</h3>
+<p class="text-gray-700 mb-4">We're conveniently located in the Eagle Building on Sosiani Street, ready to serve you during these hours:</p>
+<ul class="business-hours space-y-2">
+<li class="flex justify-between items-center p-3 rounded-md">
+<span class="font-medium">Monday</span>
+<span>8 AM - 5 PM</span>
+</li>
+<li class="flex justify-between items-center p-3 rounded-md">
+<span class="font-medium">Tuesday</span>
+<span>8 AM - 5 PM</span>
+</li>
+<li class="flex justify-between items-center p-3 rounded-md">
+<span class="font-medium">Wednesday</span>
+<span>8 AM - 5 PM</span>
+</li>
+<li class="flex justify-between items-center p-3 rounded-md">
+<span class="font-medium">Thursday</span>
+<span>8 AM - 5 PM</span>
+</li>
+<li class="flex justify-between items-center p-3 rounded-md">
+<span class="font-medium">Friday</span>
+<span>8 AM - 5 PM</span>
+</li>
+<li class="flex justify-between items-center p-3 rounded-md">
+<span class="font-medium">Saturday</span>
+<span>8 AM - 4 PM</span>
+</li>
+<li class="flex justify-between items-center p-3 rounded-md bg-red-50">
+<span class="font-medium">Sunday</span>
+<span class="text-red-500">Closed</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="bg-gray-50 p-6 rounded-lg shadow-md h-full">
+<h3 class="text-xl font-semibold mb-4 text-gray-800">Why Choose Eagle Hardware?</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="bg-blue-100 p-2 rounded-full mr-4">
+<i class="fas fa-bolt text-blue-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Quick Visits</h4>
+<p class="text-gray-600">We're known for our efficient service, perfect for customers who need to get in and out quickly.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-blue-100 p-2 rounded-full mr-4">
+<i class="fas fa-users text-blue-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Knowledgeable Staff</h4>
+<p class="text-gray-600">Our team has years of experience to help you find exactly what you need for your project.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-blue-100 p-2 rounded-full mr-4">
+<i class="fas fa-medal text-blue-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Quality Guarantee</h4>
+<p class="text-gray-600">We stand behind every product we sell with our satisfaction guarantee.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Map & Contact Section -->
+<section class="py-16 px-4 bg-gray-50" id="contact">
+<div class="max-w-6xl mx-auto">
+<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Find Us &amp; Get In Touch</h2>
+<div class="flex flex-col md:flex-row gap-8">
+<div class="md:w-1/2">
+<div class="map-container rounded-lg shadow-lg overflow-hidden">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.67469325541!2d35.27125!3d0.517193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdfbc0b171657c7a3!2sEagle%20Hardware%20Dealers%20LTD!5e0!3m2!1sen!2ske!4v1689876543210!5m2!1sen!2ske" style="border:0;" width="100%">
+</iframe>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<h3 class="text-2xl font-semibold mb-6 text-gray-800">Contact Information</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="bg-blue-100 p-3 rounded-full mr-4">
+<i class="fas fa-map-marker-alt text-blue-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Address</h4>
+<p class="text-gray-600">Eagle Building, Sosiani St, Eldoret, Kenya</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-blue-100 p-3 rounded-full mr-4">
+<i class="fas fa-phone-alt text-blue-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Phone</h4>
+<p class="text-gray-600">+254 735 333266</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-blue-100 p-3 rounded-full mr-4">
+<i class="fas fa-envelope text-blue-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Email</h4>
+<p class="text-gray-600">info@eaglehardware.co.ke</p>
+</div>
+</div>
+</div>
+<h3 class="text-xl font-semibold mt-8 mb-4 text-gray-800">Send Us a Message</h3>
+<form class="space-y-4">
+<div>
+<label class="block text-gray-700 mb-2" for="name">Your Name</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" id="name" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700 mb-2" for="email">Your Email</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" id="email" type="email"/>
+</div>
+<div>
+<label class="block text-gray-700 mb-2" for="message">Your Message</label>
+<textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" id="message" rows="4"></textarea>
+</div>
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 w-full" type="submit">
+                                Send Message
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-16 px-4 bg-white">
+<div class="max-w-6xl mx-auto">
+<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">What Our Customers Say</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Testimonial 1 -->
+<div class="bg-gray-50 p-6 rounded-lg shadow-md">
+<div class="rating-stars mb-3">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p class="text-gray-700 mb-4">"Eagle Hardware has everything I need for my construction projects. Their staff is knowledgeable and always willing to help."</p>
+<div class="flex items-center">
+<div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+<i class="fas fa-user text-blue-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">James K.</h4>
+<p class="text-sm text-gray-500">Contractor</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-gray-50 p-6 rounded-lg shadow-md">
+<div class="rating-stars mb-3">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p class="text-gray-700 mb-4">"I was impressed by their paint selection and the advice I received. My house looks amazing thanks to their quality products."</p>
+<div class="flex items-center">
+<div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+<i class="fas fa-user text-blue-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Sarah W.</h4>
+<p class="text-sm text-gray-500">Homeowner</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-gray-50 p-6 rounded-lg shadow-md">
+<div class="rating-stars mb-3">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+<p class="text-gray-700 mb-4">"As a small business owner, I appreciate their wholesale options and reliable delivery service. They've been my go-to supplier for years."</p>
+<div class="flex items-center">
+<div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+<i class="fas fa-user text-blue-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">David M.</h4>
+<p class="text-sm text-gray-500">Business Owner</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12 px-4">
+<div class="max-w-6xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h3 class="text-xl font-bold mb-4">Eagle Hardware</h3>
+<p class="text-gray-300">Your trusted hardware partner in Eldoret, Kenya since 2005.</p>
+<div class="flex space-x-4 mt-4">
+<a class="text-gray-300 hover:text-white transition" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a class="text-gray-300 hover:text-white transition" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+<a class="text-gray-300 hover:text-white transition" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a class="text-gray-300 hover:text-white transition" href="#about">About Us</a></li>
+<li><a class="text-gray-300 hover:text-white transition" href="#products">Products</a></li>
+<li><a class="text-gray-300 hover:text-white transition" href="#hours">Business Hours</a></li>
+<li><a class="text-gray-300 hover:text-white transition" href="#contact">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+<ul class="space-y-2 text-gray-300">
+<li class="flex items-start">
+<i class="fas fa-map-marker-alt mr-2 mt-1"></i>
+<span>Eagle Building, Sosiani St, Eldoret</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-phone-alt mr-2 mt-1"></i>
+<span>+254 735 333266</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-envelope mr-2 mt-1"></i>
+<span>info@eaglehardware.co.ke</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+<p class="text-gray-300 mb-4">Subscribe to get updates on new products and special offers.</p>
+<form class="flex">
+<input class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full" placeholder="Your email" type="email"/>
+<button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg transition" type="submit">
+<i class="fas fa-paper-plane"></i>
+</button>
+</form>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+<p>© 2023 Eagle Hardware Dealers LTD. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Form submission (example)
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
