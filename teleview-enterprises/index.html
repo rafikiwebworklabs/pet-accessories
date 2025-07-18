@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Teleview Enterprises | Agricultural Services in Eldoret</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .business-hours li {
+            transition: all 0.3s ease;
+        }
+        
+        .business-hours li:hover {
+            background-color: #f0fdf4;
+            transform: translateX(5px);
+        }
+        
+        .map-container {
+            height: 400px;
+        }
+        
+        @media (max-width: 768px) {
+            .map-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+<!-- Navigation -->
+<nav class="bg-green-800 text-white shadow-lg">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<i class="fas fa-tractor text-2xl"></i>
+<span class="text-xl font-bold">Teleview Enterprises</span>
+</div>
+<div class="hidden md:flex space-x-6">
+<a class="hover:text-green-200 transition" href="#services">Services</a>
+<a class="hover:text-green-200 transition" href="#location">Location</a>
+<a class="hover:text-green-200 transition" href="#hours">Hours</a>
+<a class="hover:text-green-200 transition" href="#contact">Contact</a>
+</div>
+<button class="md:hidden text-xl" id="menu-toggle">
+<i class="fas fa-bars"></i>
+</button>
+</div>
+<!-- Mobile menu -->
+<div class="md:hidden hidden bg-green-700 py-2 px-4" id="mobile-menu">
+<a class="block py-2 hover:text-green-200 transition" href="#services">Services</a>
+<a class="block py-2 hover:text-green-200 transition" href="#location">Location</a>
+<a class="block py-2 hover:text-green-200 transition" href="#hours">Hours</a>
+<a class="block py-2 hover:text-green-200 transition" href="#contact">Contact</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-bg text-white py-20 md:py-32">
+<div class="container mx-auto px-4 text-center">
+<h1 class="text-4xl md:text-6xl font-bold mb-4">Teleview Enterprises</h1>
+<p class="text-xl md:text-2xl mb-8">Your trusted agricultural service provider in Eldoret</p>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<a class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300" href="#contact">
+                    Contact Us
+                </a>
+<a class="bg-white hover:bg-gray-100 text-green-800 px-6 py-3 rounded-lg font-semibold transition duration-300" href="#location">
+                    Visit Us
+                </a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+<img alt="Agricultural services" class="rounded-lg shadow-xl w-full h-auto" src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"/>
+</div>
+<div class="md:w-1/2">
+<h2 class="text-3xl font-bold text-green-800 mb-4">About Our Business</h2>
+<p class="text-gray-700 mb-4">
+                        Teleview Enterprises is a premier agricultural service provider located along the Eldoret-Kisumu Road. 
+                        We specialize in high-quality animal feed and agricultural solutions to support local farmers and livestock owners.
+                    </p>
+<p class="text-gray-700 mb-6">
+                        With a 3.8-star rating from our satisfied customers, we pride ourselves on delivering exceptional service 
+                        and products that meet the needs of Kenya's vibrant agricultural community.
+                    </p>
+<div class="flex items-center">
+<div class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full flex items-center">
+<span class="font-bold mr-1">3.8</span>
+<i class="fas fa-star text-yellow-500 ml-1"></i>
+<span class="ml-2">(140 reviews)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-16 bg-gray-50" id="services">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-green-800 mb-12">Our Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+<div class="text-green-600 text-4xl mb-4">
+<i class="fas fa-seedling"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Agricultural Services</h3>
+<p class="text-gray-600">
+                        Comprehensive agricultural solutions tailored to your farming needs, from crop management to soil health.
+                    </p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+<div class="text-green-600 text-4xl mb-4">
+<i class="fas fa-paw"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Animal Care</h3>
+<p class="text-gray-600">
+                        Products and services dedicated to the health and wellbeing of your livestock and pets.
+                    </p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+<div class="text-green-600 text-4xl mb-4">
+<i class="fas fa-wheat-alt"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Animal Feed</h3>
+<p class="text-gray-600">
+                        High-quality, nutritious animal feed to keep your livestock healthy and productive.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-16 bg-white" id="location">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-green-800 mb-12">Our Location</h2>
+<div class="flex flex-col md:flex-row gap-8">
+<div class="md:w-1/2">
+<div class="map-container rounded-lg shadow-lg overflow-hidden">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.798146121774!2d35.27031!3d0.490841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101d806741f47%3A0xbb40d75641cae9f5!2sTeleview%20Enterprises!5e0!3m2!1sen!2ske!4v1689876543210!5m2!1sen!2ske" style="border:0;" width="100%">
+</iframe>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="bg-gray-50 p-6 rounded-lg shadow-md">
+<h3 class="text-xl font-semibold mb-4 text-green-800">Visit Our Store</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<i class="fas fa-map-marker-alt text-green-600 mt-1 mr-3"></i>
+<div>
+<p class="font-medium">Address:</p>
+<p class="text-gray-700">F7Q9+VJP, Opposite Ukerio Motors, Eldoret - Kisumu Road, Teleview, Eldoret, Kenya</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-phone-alt text-green-600 mt-1 mr-3"></i>
+<div>
+<p class="font-medium">Phone:</p>
+<p class="text-gray-700">+254 710 285153</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-envelope text-green-600 mt-1 mr-3"></i>
+<div>
+<p class="font-medium">Email:</p>
+<p class="text-gray-700">info@televiewenterprises.co.ke</p>
+</div>
+</div>
+<a class="inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition duration-300" href="https://www.google.com/maps/search/?api=1&amp;query=Teleview%20Enterprises&amp;query_place_id=ChIJRx90BtgBgRcR9enKQVbXQLs" target="_blank">
+<i class="fas fa-directions mr-2"></i> Get Directions
+                            </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Business Hours -->
+<section class="py-16 bg-gray-50" id="hours">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-green-800 mb-12">Business Hours</h2>
+<div class="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+<ul class="business-hours divide-y divide-gray-200">
+<li class="p-4 flex justify-between">
+<span class="font-medium">Monday</span>
+<span>8 AM - 5 PM</span>
+</li>
+<li class="p-4 flex justify-between">
+<span class="font-medium">Tuesday</span>
+<span>8 AM - 5 PM</span>
+</li>
+<li class="p-4 flex justify-between">
+<span class="font-medium">Wednesday</span>
+<span>8 AM - 5 PM</span>
+</li>
+<li class="p-4 flex justify-between">
+<span class="font-medium">Thursday</span>
+<span>8 AM - 5 PM</span>
+</li>
+<li class="p-4 flex justify-between">
+<span class="font-medium">Friday</span>
+<span>8 AM - 5 PM</span>
+</li>
+<li class="p-4 flex justify-between">
+<span class="font-medium">Saturday</span>
+<span>9 AM - 2 PM</span>
+</li>
+<li class="p-4 flex justify-between bg-red-50">
+<span class="font-medium text-red-600">Sunday</span>
+<span class="text-red-600">Closed</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 bg-white" id="contact">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-green-800 mb-12">Contact Us</h2>
+<div class="max-w-4xl mx-auto">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="name">Name</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" id="name" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="email">Email</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" id="email" type="email"/>
+</div>
+<div class="md:col-span-2">
+<label class="block text-gray-700 font-medium mb-2" for="subject">Subject</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" id="subject" type="text"/>
+</div>
+<div class="md:col-span-2">
+<label class="block text-gray-700 font-medium mb-2" for="message">Message</label>
+<textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" id="message" rows="4"></textarea>
+</div>
+<div class="md:col-span-2">
+<button class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300" type="submit">
+                            Send Message
+                        </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-green-900 text-white py-8">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-6 md:mb-0">
+<div class="flex items-center space-x-2">
+<i class="fas fa-tractor text-2xl"></i>
+<span class="text-xl font-bold">Teleview Enterprises</span>
+</div>
+<p class="mt-2 text-green-200">Quality agricultural services in Eldoret</p>
+</div>
+<div class="flex space-x-6">
+<a class="text-2xl hover:text-green-300 transition" href="#">
+<i class="fab fa-facebook"></i>
+</a>
+<a class="text-2xl hover:text-green-300 transition" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+<a class="text-2xl hover:text-green-300 transition" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="text-2xl hover:text-green-300 transition" href="#">
+<i class="fab fa-whatsapp"></i>
+</a>
+</div>
+</div>
+<div class="border-t border-green-800 mt-8 pt-6 text-center text-green-300">
+<p>© 2023 Teleview Enterprises. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
