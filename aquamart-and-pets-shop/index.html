@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aquapet - The Junction Mall | Pet Store in Kilimani, Nairobi</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1498&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .rating-stars {
+            color: #fbbf24;
+        }
+        
+        .hours-table tr:nth-child(odd) {
+            background-color: #f3f4f6;
+        }
+        
+        .map-container {
+            height: 400px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                padding-top: 100px;
+            }
+            
+            .map-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+<!-- Navigation -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<i class="fas fa-paw text-blue-600 text-2xl"></i>
+<span class="text-xl font-bold text-gray-800">Aquapet</span>
+</div>
+<div class="hidden md:flex space-x-6">
+<a class="text-gray-700 hover:text-blue-600 font-medium" href="#about">About</a>
+<a class="text-gray-700 hover:text-blue-600 font-medium" href="#services">Services</a>
+<a class="text-gray-700 hover:text-blue-600 font-medium" href="#hours">Hours</a>
+<a class="text-gray-700 hover:text-blue-600 font-medium" href="#location">Location</a>
+<a class="text-gray-700 hover:text-blue-600 font-medium" href="#contact">Contact</a>
+</div>
+<button class="md:hidden text-gray-700">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero text-white py-20 md:py-32">
+<div class="container mx-auto px-4 hero-content">
+<div class="max-w-2xl">
+<h1 class="text-4xl md:text-5xl font-bold mb-4">Aquapet at The Junction Mall</h1>
+<p class="text-xl mb-6">Your trusted pet store in Kilimani, Nairobi offering quality pet supplies and accessories.</p>
+<div class="flex items-center mb-6">
+<div class="rating-stars mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+<span class="font-medium">4.3 (Google Reviews)</span>
+</div>
+<div class="flex flex-wrap gap-4">
+<a class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300" href="#location">
+<i class="fas fa-map-marker-alt mr-2"></i> Visit Us
+                    </a>
+<a class="bg-white hover:bg-gray-100 text-blue-600 px-6 py-3 rounded-lg font-medium transition duration-300" href="#contact">
+<i class="fas fa-phone-alt mr-2"></i> Contact Us
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 bg-white" id="about">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+<h2 class="text-3xl font-bold text-gray-800 mb-6">About Aquapet</h2>
+<p class="text-gray-600 mb-4">Located in The Junction Mall, Kilimani, Aquapet is Nairobi's premier destination for all your pet needs. We pride ourselves on offering high-quality pet supplies, accessories, and expert advice to help you care for your furry, feathery, or scaly friends.</p>
+<p class="text-gray-600 mb-6">Our knowledgeable staff is passionate about animals and dedicated to helping you find exactly what you need for your pet's health and happiness.</p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center bg-blue-50 px-4 py-2 rounded-lg">
+<i class="fas fa-check-circle text-blue-600 mr-2"></i>
+<span class="text-gray-700">Quality Products</span>
+</div>
+<div class="flex items-center bg-blue-50 px-4 py-2 rounded-lg">
+<i class="fas fa-check-circle text-blue-600 mr-2"></i>
+<span class="text-gray-700">Expert Advice</span>
+</div>
+<div class="flex items-center bg-blue-50 px-4 py-2 rounded-lg">
+<i class="fas fa-check-circle text-blue-600 mr-2"></i>
+<span class="text-gray-700">Pet-Friendly</span>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Pet store interior" class="rounded-lg shadow-lg w-full h-auto" src="https://images.unsplash.com/photo-1591769225440-811ad7d6eab2?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-16 bg-gray-50" id="services">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Products &amp; Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+<div class="text-blue-600 text-4xl mb-4">
+<i class="fas fa-bone"></i>
+</div>
+<h3 class="text-xl font-bold mb-3 text-gray-800">Pet Food &amp; Treats</h3>
+<p class="text-gray-600">Premium quality food for dogs, cats, birds, fish, and small animals. We carry trusted brands to keep your pets healthy.</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+<div class="text-blue-600 text-4xl mb-4">
+<i class="fas fa-tshirt"></i>
+</div>
+<h3 class="text-xl font-bold mb-3 text-gray-800">Accessories</h3>
+<p class="text-gray-600">From collars and leashes to beds and toys, we have everything to keep your pet comfortable and entertained.</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+<div class="text-blue-600 text-4xl mb-4">
+<i class="fas fa-question-circle"></i>
+</div>
+<h3 class="text-xl font-bold mb-3 text-gray-800">Expert Advice</h3>
+<p class="text-gray-600">Our knowledgeable staff can help with pet care questions, product recommendations, and general pet advice.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Hours Section -->
+<section class="py-16 bg-white" id="hours">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Opening Hours</h2>
+<div class="max-w-md mx-auto bg-gray-50 rounded-lg shadow-md overflow-hidden">
+<table class="w-full hours-table">
+<tr>
+<td class="px-6 py-4 font-medium">Monday</td>
+<td class="px-6 py-4 text-right">9:00 AM - 7:30 PM</td>
+</tr>
+<tr>
+<td class="px-6 py-4 font-medium">Tuesday</td>
+<td class="px-6 py-4 text-right">10:00 AM - 7:30 PM</td>
+</tr>
+<tr>
+<td class="px-6 py-4 font-medium">Wednesday</td>
+<td class="px-6 py-4 text-right">10:00 AM - 7:30 PM</td>
+</tr>
+<tr>
+<td class="px-6 py-4 font-medium">Thursday</td>
+<td class="px-6 py-4 text-right">10:00 AM - 7:30 PM</td>
+</tr>
+<tr>
+<td class="px-6 py-4 font-medium">Friday</td>
+<td class="px-6 py-4 text-right">10:00 AM - 7:30 PM</td>
+</tr>
+<tr>
+<td class="px-6 py-4 font-medium">Saturday</td>
+<td class="px-6 py-4 text-right">10:00 AM - 7:30 PM</td>
+</tr>
+<tr>
+<td class="px-6 py-4 font-medium">Sunday</td>
+<td class="px-6 py-4 text-right">10:00 AM - 7:30 PM</td>
+</tr>
+</table>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-16 bg-gray-50" id="location">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row">
+<div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+<h2 class="text-3xl font-bold text-gray-800 mb-6">Our Location</h2>
+<p class="text-gray-600 mb-6">
+<i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
+                        The Junction Mall, Kilimani, Nairobi, Kenya
+                    </p>
+<p class="text-gray-600 mb-6">We're conveniently located in The Junction Mall, making it easy for you to shop for your pet while running other errands.</p>
+<div class="bg-white p-6 rounded-lg shadow-sm mb-6">
+<h3 class="text-xl font-bold mb-4 text-gray-800">Quick Visit</h3>
+<p class="text-gray-600 mb-4">Perfect for when you need to quickly pick up pet essentials without spending too much time shopping.</p>
+<a class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition duration-300" href="https://www.google.com/maps/search/?api=1&amp;query=Aquapet-The%20Junction%20Mall&amp;query_place_id=ChIJA5RLHqQbLxgRfMaGL5cjmFc" target="_blank">
+<i class="fas fa-directions mr-2"></i> Get Directions
+                        </a>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="map-container rounded-lg shadow-lg overflow-hidden">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.817082618813!2d36.75989531575375!3d-1.298303999061808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1ba41e4b9403%3A0x579823972f86c67c!2sAquapet-The%20Junction%20Mall!5e0!3m2!1sen!2ske!4v1686750000000!5m2!1sen!2ske" style="border:0;" width="100%"></iframe>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 bg-white" id="contact">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Contact Us</h2>
+<div class="max-w-4xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+<h3 class="text-xl font-bold mb-4 text-gray-800">Get in Touch</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<i class="fas fa-phone-alt text-blue-600 mt-1 mr-3"></i>
+<div>
+<p class="font-medium text-gray-700">Phone</p>
+<p class="text-gray-600">+254 736 876277</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-envelope text-blue-600 mt-1 mr-3"></i>
+<div>
+<p class="font-medium text-gray-700">Email</p>
+<p class="text-gray-600">info@aquapet.co.ke</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3"></i>
+<div>
+<p class="font-medium text-gray-700">Address</p>
+<p class="text-gray-600">The Junction Mall, Kilimani, Nairobi, Kenya</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+<h3 class="text-xl font-bold mb-4 text-gray-800">Send Us a Message</h3>
+<form>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="name">Name</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" id="name" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="email">Email</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" id="email" type="email"/>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="message">Message</label>
+<textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" id="message" rows="3"></textarea>
+</div>
+<button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition duration-300" type="submit">
+                                Send Message
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-6 md:mb-0">
+<div class="flex items-center space-x-2 mb-4">
+<i class="fas fa-paw text-blue-400 text-2xl"></i>
+<span class="text-xl font-bold">Aquapet</span>
+</div>
+<p class="text-gray-400">Your trusted pet store in Kilimani, Nairobi.</p>
+</div>
+<div class="flex space-x-6">
+<a class="text-gray-400 hover:text-white transition duration-300" href="#">
+<i class="fab fa-facebook-f text-xl"></i>
+</a>
+<a class="text-gray-400 hover:text-white transition duration-300" href="#">
+<i class="fab fa-twitter text-xl"></i>
+</a>
+<a class="text-gray-400 hover:text-white transition duration-300" href="#">
+<i class="fab fa-instagram text-xl"></i>
+</a>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+<p>© 2023 Aquapet at The Junction Mall. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Back to Top Button -->
+<button class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300" id="backToTop">
+<i class="fas fa-arrow-up"></i>
+</button>
+<script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Mobile Menu Toggle (would need more implementation)
+        document.querySelector('.md\\:hidden').addEventListener('click', () => {
+            alert('Mobile menu would open here in a full implementation');
+        });
+    </script>
+</body>
+</html>
