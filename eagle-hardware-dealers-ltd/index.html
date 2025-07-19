@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eagle Hardware Distributors Ltd | Pioneer, Eldoret</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+        }
+        
+        .category-badge {
+            transition: all 0.3s ease;
+        }
+        
+        .category-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .map-container {
+            height: 400px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .opening-hours li {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 12px 0;
+        }
+        
+        .opening-hours li:last-child {
+            border-bottom: none;
+        }
+        
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .scroll-to-top.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+<!-- Navigation -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<i class="fas fa-hard-hat text-blue-600 text-2xl"></i>
+<span class="text-xl font-bold text-gray-800">Eagle Hardware</span>
+</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-gray-700 hover:text-blue-600 transition" href="#about">About</a>
+<a class="text-gray-700 hover:text-blue-600 transition" href="#products">Products</a>
+<a class="text-gray-700 hover:text-blue-600 transition" href="#hours">Hours</a>
+<a class="text-gray-700 hover:text-blue-600 transition" href="#location">Location</a>
+<a class="text-gray-700 hover:text-blue-600 transition" href="#contact">Contact</a>
+</div>
+<button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+</div>
+<!-- Mobile Menu -->
+<div class="md:hidden hidden bg-white py-2 px-4 shadow-lg" id="mobile-menu">
+<a class="block py-2 text-gray-700 hover:text-blue-600 transition" href="#about">About</a>
+<a class="block py-2 text-gray-700 hover:text-blue-600 transition" href="#products">Products</a>
+<a class="block py-2 text-gray-700 hover:text-blue-600 transition" href="#hours">Hours</a>
+<a class="block py-2 text-gray-700 hover:text-blue-600 transition" href="#location">Location</a>
+<a class="block py-2 text-gray-700 hover:text-blue-600 transition" href="#contact">Contact</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-gradient text-white py-20">
+<div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-10 md:mb-0">
+<h1 class="text-4xl md:text-5xl font-bold mb-4">Eagle Hardware Distributors Ltd</h1>
+<p class="text-xl mb-6">Your trusted hardware partner in Eldoret, Kenya</p>
+<div class="flex items-center mb-6">
+<div class="flex items-center mr-6">
+<i class="fas fa-star text-yellow-300 mr-2"></i>
+<span class="font-semibold">4.3</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-map-marker-alt mr-2"></i>
+<span>Pioneer, Eldoret 30100, Kenya</span>
+</div>
+</div>
+<div class="flex space-x-4">
+<a class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition" href="#location">Get Directions</a>
+<a class="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition" href="#contact">Contact Us</a>
+</div>
+</div>
+<div class="md:w-1/2 flex justify-center">
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden w-full max-w-md">
+<img alt="Eagle Hardware Store" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noBAv-FeqlbG00fXV7Vge5QH0iviyEeoESqh7eYJKDHHG7YZx6s7jge_BUpyCNGgoAXjIT3UbAruDDC4qUHrb4gvBjKKzKffTQmiQ3tjHuz2VQReQbHvz5dOW2nPuLJ2nKlaAgb=w408-h544-k-no"/>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 bg-white" id="about">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">About Our Hardware Store</h2>
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+<p class="text-gray-700 mb-4 leading-relaxed">
+                        Eagle Hardware Distributors Ltd is a premier hardware store located in Pioneer, Eldoret, Kenya. We've been serving the community with top-quality hardware products and exceptional service since our establishment.
+                    </p>
+<p class="text-gray-700 mb-4 leading-relaxed">
+                        Our store is conveniently located in the heart of Eldoret, making it easy for contractors, builders, and homeowners to access all their hardware needs in one place.
+                    </p>
+<p class="text-gray-700 leading-relaxed">
+                        With a customer rating of 4.3 stars, we pride ourselves on our knowledgeable staff, competitive prices, and extensive inventory that caters to all your construction and home improvement needs.
+                    </p>
+</div>
+<div class="md:w-1/2">
+<div class="bg-gray-100 p-6 rounded-xl shadow-md">
+<h3 class="text-xl font-semibold mb-4 text-gray-800">Store Highlights</h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+<span class="text-gray-700">Quick visit-friendly layout for efficient shopping</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+<span class="text-gray-700">Wide range of products from multiple categories</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+<span class="text-gray-700">Convenient operating hours throughout the week</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+<span class="text-gray-700">Knowledgeable staff to assist with your projects</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+<span class="text-gray-700">Competitive pricing on all our products</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Products Section -->
+<section class="py-16 bg-gray-50" id="products">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Product Categories</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Hardware Store -->
+<div class="category-badge bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer">
+<div class="flex items-center mb-4">
+<div class="bg-blue-100 p-3 rounded-full mr-4">
+<i class="fas fa-tools text-blue-600 text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800">Hardware Store</h3>
+</div>
+<p class="text-gray-600">
+                        Comprehensive selection of tools, fasteners, and building materials for all your construction and repair needs.
+                    </p>
+</div>
+<!-- Ceramics Wholesaler -->
+<div class="category-badge bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer">
+<div class="flex items-center mb-4">
+<div class="bg-red-100 p-3 rounded-full mr-4">
+<i class="fas fa-tile text-red-600 text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800">Ceramics Wholesaler</h3>
+</div>
+<p class="text-gray-600">
+                        Premium quality tiles and ceramic products for flooring, walls, and decorative applications.
+                    </p>
+</div>
+<!-- Furniture Wholesaler -->
+<div class="category-badge bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer">
+<div class="flex items-center mb-4">
+<div class="bg-yellow-100 p-3 rounded-full mr-4">
+<i class="fas fa-couch text-yellow-600 text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800">Furniture Wholesaler</h3>
+</div>
+<p class="text-gray-600">
+                        Durable and stylish furniture options for homes, offices, and commercial spaces.
+                    </p>
+</div>
+<!-- Paint Store -->
+<div class="category-badge bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer">
+<div class="flex items-center mb-4">
+<div class="bg-green-100 p-3 rounded-full mr-4">
+<i class="fas fa-paint-roller text-green-600 text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800">Paint Store</h3>
+</div>
+<p class="text-gray-600">
+                        Wide range of interior and exterior paints, stains, and painting accessories from top brands.
+                    </p>
+</div>
+<!-- Steel Distributor -->
+<div class="category-badge bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer">
+<div class="flex items-center mb-4">
+<div class="bg-gray-100 p-3 rounded-full mr-4">
+<i class="fas fa-hard-hat text-gray-600 text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800">Steel Distributor</h3>
+</div>
+<p class="text-gray-600">
+                        High-quality steel products including rods, sheets, and structural components for construction.
+                    </p>
+</div>
+<!-- More Products -->
+<div class="category-badge bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer">
+<div class="flex items-center mb-4">
+<div class="bg-purple-100 p-3 rounded-full mr-4">
+<i class="fas fa-boxes text-purple-600 text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800">And More</h3>
+</div>
+<p class="text-gray-600">
+                        Explore our additional product categories including plumbing, electrical, and home improvement supplies.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Hours Section -->
+<section class="py-16 bg-white" id="hours">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Opening Hours</h2>
+<div class="max-w-2xl mx-auto bg-gray-50 rounded-xl shadow-md overflow-hidden">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-6 text-gray-800">Our Regular Business Hours</h3>
+<ul class="opening-hours">
+<li class="flex justify-between">
+<span class="font-medium text-gray-700">Monday</span>
+<span class="text-gray-600">7:30 AM - 5:00 PM</span>
+</li>
+<li class="flex justify-between">
+<span class="font-medium text-gray-700">Tuesday</span>
+<span class="text-gray-600">7:30 AM - 5:00 PM</span>
+</li>
+<li class="flex justify-between">
+<span class="font-medium text-gray-700">Wednesday</span>
+<span class="text-gray-600">7:30 AM - 5:00 PM</span>
+</li>
+<li class="flex justify-between">
+<span class="font-medium text-gray-700">Thursday</span>
+<span class="text-gray-600">7:30 AM - 5:00 PM</span>
+</li>
+<li class="flex justify-between">
+<span class="font-medium text-gray-700">Friday</span>
+<span class="text-gray-600">7:30 AM - 5:00 PM</span>
+</li>
+<li class="flex justify-between">
+<span class="font-medium text-gray-700">Saturday</span>
+<span class="text-gray-600">7:30 AM - 4:00 PM</span>
+</li>
+<li class="flex justify-between">
+<span class="font-medium text-gray-700">Sunday</span>
+<span class="text-gray-600">Closed</span>
+</li>
+</ul>
+</div>
+<div class="bg-blue-50 p-4 text-center">
+<p class="text-blue-700 font-medium">
+<i class="fas fa-info-circle mr-2"></i> Hours may vary during holidays and special occasions
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-16 bg-gray-50" id="location">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Location</h2>
+<div class="flex flex-col lg:flex-row gap-8">
+<div class="lg:w-1/2">
+<div class="map-container">
+<iframe allowfullscreen="" height="100%" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.760144461119!2d35.27125!3d0.503151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101ff2a434365%3A0xb83804a1cf7bf2c8!2sEagle%20Hardware%20Distributors%20Ltd-twyford%2Cfrencia!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske" style="border:0;" width="100%">
+</iframe>
+</div>
+</div>
+<div class="lg:w-1/2">
+<div class="bg-white p-6 rounded-xl shadow-md h-full">
+<h3 class="text-xl font-semibold mb-4 text-gray-800">Visit Our Store</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3 text-lg"></i>
+<div>
+<h4 class="font-medium text-gray-800">Address</h4>
+<p class="text-gray-600">Pioneer, Eldoret 30100, Kenya</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-compass text-blue-600 mt-1 mr-3 text-lg"></i>
+<div>
+<h4 class="font-medium text-gray-800">Coordinates</h4>
+<p class="text-gray-600">0.503151, 35.27125</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-external-link-alt text-blue-600 mt-1 mr-3 text-lg"></i>
+<div>
+<h4 class="font-medium text-gray-800">Google Maps</h4>
+<a class="text-blue-600 hover:underline" href="https://www.google.com/maps/search/?api=1&amp;query=Eagle%20Hardware%20Distributors%20Ltd-twyford%2Cfrencia&amp;query_place_id=ChIJZUNDKv8BgRcRyPJ7z6EEOLg" target="_blank">
+                                        Open in Google Maps
+                                    </a>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-car text-blue-600 mt-1 mr-3 text-lg"></i>
+<div>
+<h4 class="font-medium text-gray-800">Parking</h4>
+<p class="text-gray-600">Ample parking space available for customers</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-wheelchair text-blue-600 mt-1 mr-3 text-lg"></i>
+<div>
+<h4 class="font-medium text-gray-800">Accessibility</h4>
+<p class="text-gray-600">Wheelchair accessible entrance and facilities</p>
+</div>
+</div>
+</div>
+<div class="mt-6">
+<a class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition inline-flex items-center" href="https://www.google.com/maps/dir//Eagle+Hardware+Distributors+Ltd-twyford,frencia/@0.503151,35.27125,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x178101ff2a434365:0xb83804a1cf7bf2c8!2m2!1d35.27125!2d0.503151" target="_blank">
+<i class="fas fa-directions mr-2"></i> Get Directions
+                            </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 bg-white" id="contact">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Contact Us</h2>
+<div class="flex flex-col lg:flex-row gap-8">
+<div class="lg:w-1/2">
+<div class="bg-gray-50 p-6 rounded-xl shadow-md h-full">
+<h3 class="text-xl font-semibold mb-4 text-gray-800">Get In Touch</h3>
+<form class="space-y-4" id="contactForm">
+<div>
+<label class="block text-gray-700 mb-2" for="name">Your Name</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" id="name" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700 mb-2" for="email">Email Address</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" id="email" type="email"/>
+</div>
+<div>
+<label class="block text-gray-700 mb-2" for="phone">Phone Number</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" id="phone" type="tel"/>
+</div>
+<div>
+<label class="block text-gray-700 mb-2" for="message">Your Message</label>
+<textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" id="message" rows="4"></textarea>
+</div>
+<button class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition w-full" type="submit">
+                                Send Message
+                            </button>
+</form>
+</div>
+</div>
+<div class="lg:w-1/2">
+<div class="bg-gray-50 p-6 rounded-xl shadow-md h-full">
+<h3 class="text-xl font-semibold mb-4 text-gray-800">Contact Information</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="bg-blue-100 p-3 rounded-full mr-4">
+<i class="fas fa-store text-blue-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Eagle Hardware Distributors Ltd</h4>
+<p class="text-gray-600">Pioneer, Eldoret 30100, Kenya</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-green-100 p-3 rounded-full mr-4">
+<i class="fas fa-phone-alt text-green-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Phone</h4>
+<p class="text-gray-600">+254 113 164799</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-purple-100 p-3 rounded-full mr-4">
+<i class="fas fa-envelope text-purple-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Email</h4>
+<p class="text-gray-600">info@eaglehardware.co.ke</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-yellow-100 p-3 rounded-full mr-4">
+<i class="fas fa-globe text-yellow-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Website</h4>
+<a class="text-blue-600 hover:underline" href="#">www.eaglehardware.co.ke</a>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h4 class="font-medium text-gray-800 mb-4">Follow Us</h4>
+<div class="flex space-x-4">
+<a class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a class="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-500 transition" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+<a class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="bg-red-600 text-white p-3 rounded-full hover:bg-red-700 transition" href="#">
+<i class="fab fa-youtube"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div>
+<div class="flex items-center mb-4">
+<i class="fas fa-hard-hat text-blue-400 text-2xl mr-2"></i>
+<span class="text-xl font-bold">Eagle Hardware</span>
+</div>
+<p class="text-gray-400 mb-4">
+                        Your trusted hardware partner in Eldoret, Kenya, providing quality products and exceptional service since our establishment.
+                    </p>
+<div class="flex space-x-4">
+<a class="text-gray-400 hover:text-white transition" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a class="text-gray-400 hover:text-white transition" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+<a class="text-gray-400 hover:text-white transition" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-white transition" href="#about">About Us</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#products">Products</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#hours">Opening Hours</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#location">Location</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#contact">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Product Categories</h3>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-white transition" href="#">Hardware</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#">Ceramics</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#">Furniture</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#">Paints</a></li>
+<li><a class="text-gray-400 hover:text-white transition" href="#">Steel Products</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+<ul class="space-y-2">
+<li class="flex items-start">
+<i class="fas fa-map-marker-alt mt-1 mr-2 text-blue-400"></i>
+<span class="text-gray-400">Pioneer, Eldoret 30100, Kenya</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-phone-alt mt-1 mr-2 text-blue-400"></i>
+<span class="text-gray-400">+254 113 164799</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-envelope mt-1 mr-2 text-blue-400"></i>
+<span class="text-gray-400">info@eaglehardware.co.ke</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+<p>© 2023 Eagle Hardware Distributors Ltd. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Scroll to Top Button -->
+<button class="scroll-to-top bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition" id="scrollToTop">
+<i class="fas fa-arrow-up"></i>
+</button>
+<script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Scroll to top button
+        const scrollToTopButton = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopButton.classList.add('active');
+            } else {
+                scrollToTopButton.classList.remove('active');
+            }
+        });
+        
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send the form data to a server
+            // For this example, we'll just show an alert
+            alert(`Thank you, ${name}! Your message has been received. We'll contact you soon at ${email} or ${phone}.`);
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // Animate elements when they come into view
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.category-badge, .map-container, .opening-hours li');
+            
+            elements.forEach((element, index) => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    setTimeout(() => {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }, index * 100);
+                }
+            });
+        };
+        
+        // Set initial styles for animation
+        document.querySelectorAll('.category-badge, .map-container').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'all 0.5s ease';
+        });
+        
+        document.querySelectorAll('.opening-hours li').forEach((element, index) => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateX(-20px)';
+            element.style.transition = `all 0.3s ease ${index * 0.1}s`;
+        });
+        
+        // Run animation check on load and scroll
+        window.addEventListener('load', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+</body>
+</html>
