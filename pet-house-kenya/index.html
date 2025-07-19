@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pet House Kenya - Premium Pet Store in Nairobi</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://lh3.googleusercontent.com/p/AF1QipMh6mai29EmaJtFxgw0THazmwkO79hs81BN-Nv5=w408-h306-k-no');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+        }
+        
+        .rating-stars {
+            color: #FFD700;
+        }
+        
+        .map-container {
+            height: 400px;
+            width: 100%;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                height: 50vh;
+            }
+            
+            .map-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+<!-- Navigation -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+<div class="max-w-6xl mx-auto px-4">
+<div class="flex justify-between items-center py-4">
+<div class="flex items-center space-x-4">
+<div>
+<a class="flex items-center" href="#">
+<i class="fas fa-paw text-2xl text-indigo-600 mr-2"></i>
+<span class="font-bold text-xl text-indigo-600">Pet House Kenya</span>
+</a>
+</div>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-gray-700 hover:text-indigo-600 font-medium" href="#home">Home</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium" href="#about">About</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium" href="#products">Products</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium" href="#location">Location</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium" href="#contact">Contact</a>
+</div>
+<div class="md:hidden">
+<button class="text-gray-700 focus:outline-none" id="menu-btn">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+</div>
+</div>
+<div class="hidden md:hidden pb-4" id="mobile-menu">
+<a class="block py-2 text-gray-700 hover:text-indigo-600" href="#home">Home</a>
+<a class="block py-2 text-gray-700 hover:text-indigo-600" href="#about">About</a>
+<a class="block py-2 text-gray-700 hover:text-indigo-600" href="#products">Products</a>
+<a class="block py-2 text-gray-700 hover:text-indigo-600" href="#location">Location</a>
+<a class="block py-2 text-gray-700 hover:text-indigo-600" href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero flex items-center justify-center text-white" id="home">
+<div class="text-center px-4">
+<h1 class="text-4xl md:text-6xl font-bold mb-4">Premium Pet Supplies in Nairobi</h1>
+<p class="text-xl md:text-2xl mb-8">Everything your furry friends need under one roof</p>
+<div class="flex justify-center items-center mb-6">
+<div class="rating-stars mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+<span class="text-white">4.3 (73 reviews)</span>
+</div>
+<a class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block" href="#products">
+                Shop Now
+            </a>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 bg-white" id="about">
+<div class="max-w-6xl mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">About Pet House Kenya</h2>
+<div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+</div>
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+<img alt="Pet House Kenya Store" class="rounded-lg shadow-xl w-full" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1469&amp;q=80"/>
+</div>
+<div class="md:w-1/2">
+<h3 class="text-2xl font-semibold text-gray-800 mb-4">Your Trusted Pet Store in Kilimani</h3>
+<p class="text-gray-600 mb-4">Located in the heart of Nairobi at Tropical Towers, Suite CF, Ground Floor Komo Lane, off Wood Ave, Pet House Kenya has been serving pet lovers since our establishment.</p>
+<p class="text-gray-600 mb-6">We pride ourselves on offering high-quality pet products, from premium pet food to stylish accessories and essential healthcare items. Our knowledgeable staff are passionate about pets and ready to help you find exactly what your furry, feathered, or scaled friends need.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center">
+<i class="fas fa-check-circle text-indigo-600 mr-2"></i>
+<span class="text-gray-700">Premium Products</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-check-circle text-indigo-600 mr-2"></i>
+<span class="text-gray-700">Knowledgeable Staff</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-check-circle text-indigo-600 mr-2"></i>
+<span class="text-gray-700">Quick Visits</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-check-circle text-indigo-600 mr-2"></i>
+<span class="text-gray-700">Pet-Friendly</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Products Section -->
+<section class="py-16 bg-gray-50" id="products">
+<div class="max-w-6xl mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Our Products</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Browse our wide selection of pet accessories and supplies for all your furry friends</p>
+<div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition duration-300">
+<img alt="Premium Dog Food" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1589927986089-35812388d1f4?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Premium Dog Food</h3>
+<p class="text-gray-600 mb-4">High-quality, nutritious food for your canine companion</p>
+<div class="flex justify-between items-center">
+<span class="text-indigo-600 font-bold">KSh 2,500</span>
+<button class="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition duration-300">
+<img alt="Cat Tree" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1591769225440-811ad7d6eab2?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Deluxe Cat Tree</h3>
+<p class="text-gray-600 mb-4">Multi-level playground for your feline friend</p>
+<div class="flex justify-between items-center">
+<span class="text-indigo-600 font-bold">KSh 6,800</span>
+<button class="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition duration-300">
+<img alt="Pet Accessories" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1551251626-9a755b03e0e3?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Pet Accessories Bundle</h3>
+<p class="text-gray-600 mb-4">Everything you need for your pet's comfort</p>
+<div class="flex justify-between items-center">
+<span class="text-indigo-600 font-bold">KSh 3,200</span>
+<button class="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<a class="inline-block border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white font-bold py-3 px-8 rounded-full transition duration-300" href="#">
+                    View All Products
+                </a>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-16 bg-white" id="location">
+<div class="max-w-6xl mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Our Location</h2>
+<p class="text-gray-600">Visit us at our convenient Kilimani location</p>
+<div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+</div>
+<div class="flex flex-col md:flex-row">
+<div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+<div class="bg-gray-100 p-6 rounded-lg">
+<h3 class="text-xl font-semibold text-gray-800 mb-4">Store Information</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<i class="fas fa-map-marker-alt text-indigo-600 mt-1 mr-3"></i>
+<div>
+<h4 class="font-medium text-gray-800">Address</h4>
+<p class="text-gray-600">Tropical Towers, Suite CF, Ground Floor<br/>Komo Lane, off Wood Ave<br/>Kilimani, Nairobi, Kenya</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-clock text-indigo-600 mt-1 mr-3"></i>
+<div>
+<h4 class="font-medium text-gray-800">Opening Hours</h4>
+<p class="text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM<br/>Saturday: 9:00 AM - 4:00 PM<br/>Sunday: Closed</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-phone-alt text-indigo-600 mt-1 mr-3"></i>
+<div>
+<h4 class="font-medium text-gray-800">Contact</h4>
+<p class="text-gray-600">Phone: +254 777 113991</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<a class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-flex items-center" href="https://www.google.com/maps/search/?api=1&amp;query=Pet%20House%20Kenya&amp;query_place_id=ChIJDdsw6aEQLxgRtumfrgOXa1k" target="_blank">
+<i class="fas fa-map-marked-alt mr-2"></i>
+                            Get Directions
+                        </a>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="map-container rounded-lg shadow-xl overflow-hidden">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.818239396012!2d36.78345531533841!3d-1.293932935590843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10a1e930db0d%3A0x596b9703ae9fe9b6!2sPet%20House%20Kenya!5e0!3m2!1sen!2ske!4v1689876543210!5m2!1sen!2ske" style="border:0;" width="100%"></iframe>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-16 bg-gray-50">
+<div class="max-w-6xl mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Customers Say</h2>
+<p class="text-gray-600">Hear from pet owners who trust us for their pet needs</p>
+<div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="rating-stars mb-3">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p class="text-gray-600 mb-4">"The best pet store in Nairobi! Their selection of premium dog food is unmatched, and my golden retriever absolutely loves it."</p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+<i class="fas fa-user text-indigo-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Sarah M.</h4>
+<p class="text-sm text-gray-500">Dog Owner</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="rating-stars mb-3">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p class="text-gray-600 mb-4">"I always find what I need at Pet House Kenya. The staff are knowledgeable and helped me choose the perfect cat tree for my two Persians."</p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+<i class="fas fa-user text-indigo-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">James K.</h4>
+<p class="text-sm text-gray-500">Cat Owner</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="rating-stars mb-3">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+<p class="text-gray-600 mb-4">"Convenient location and quick service. I can pop in during lunch breaks and find everything I need for my parrot."</p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+<i class="fas fa-user text-indigo-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Amina W.</h4>
+<p class="text-sm text-gray-500">Bird Owner</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 bg-white" id="contact">
+<div class="max-w-6xl mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Contact Us</h2>
+<p class="text-gray-600">Have questions? Get in touch with our team</p>
+<div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+</div>
+<div class="flex flex-col md:flex-row">
+<div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+<form class="space-y-6">
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="name">Your Name</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" id="name" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="email">Email Address</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" id="email" type="email"/>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="phone">Phone Number</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" id="phone" type="tel"/>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="message">Your Message</label>
+<textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" id="message" rows="4"></textarea>
+</div>
+<button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 w-full" type="submit">
+                            Send Message
+                        </button>
+</form>
+</div>
+<div class="md:w-1/2">
+<div class="bg-gray-100 p-8 rounded-lg h-full">
+<h3 class="text-xl font-semibold text-gray-800 mb-6">Other Ways to Reach Us</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="bg-indigo-100 p-3 rounded-full mr-4">
+<i class="fas fa-envelope text-indigo-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800 mb-1">Email Us</h4>
+<p class="text-gray-600">info@pethousekenya.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-indigo-100 p-3 rounded-full mr-4">
+<i class="fas fa-phone-alt text-indigo-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800 mb-1">Call Us</h4>
+<p class="text-gray-600">+254 777 113991</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-indigo-100 p-3 rounded-full mr-4">
+<i class="fab fa-whatsapp text-indigo-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800 mb-1">WhatsApp</h4>
+<p class="text-gray-600">+254 777 113991</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-indigo-100 p-3 rounded-full mr-4">
+<i class="fab fa-facebook-f text-indigo-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800 mb-1">Facebook</h4>
+<p class="text-gray-600">@PetHouseKenya</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-indigo-100 p-3 rounded-full mr-4">
+<i class="fab fa-instagram text-indigo-600"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800 mb-1">Instagram</h4>
+<p class="text-gray-600">@PetHouseKenya</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+<div class="max-w-6xl mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h3 class="text-xl font-bold mb-4 flex items-center">
+<i class="fas fa-paw text-indigo-400 mr-2"></i>
+                        Pet House Kenya
+                    </h3>
+<p class="text-gray-400">Your one-stop shop for all pet supplies in Nairobi. Quality products for all your furry, feathered, and scaled friends.</p>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-white transition duration-300" href="#home">Home</a></li>
+<li><a class="text-gray-400 hover:text-white transition duration-300" href="#about">About Us</a></li>
+<li><a class="text-gray-400 hover:text-white transition duration-300" href="#products">Products</a></li>
+<li><a class="text-gray-400 hover:text-white transition duration-300" href="#location">Location</a></li>
+<li><a class="text-gray-400 hover:text-white transition duration-300" href="#contact">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Store Hours</h4>
+<ul class="space-y-2 text-gray-400">
+<li class="flex justify-between">
+<span>Monday - Friday</span>
+<span>8:00 AM - 6:00 PM</span>
+</li>
+<li class="flex justify-between">
+<span>Saturday</span>
+<span>9:00 AM - 4:00 PM</span>
+</li>
+<li class="flex justify-between">
+<span>Sunday</span>
+<span>Closed</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+<p class="text-gray-400 mb-4">Subscribe to get updates on new products and special offers.</p>
+<form class="flex">
+<input class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full" placeholder="Your email" type="email"/>
+<button class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-r-lg" type="submit">
+<i class="fas fa-paper-plane"></i>
+</button>
+</form>
+<div class="flex space-x-4 mt-4">
+<a class="w-10 h-10 rounded-full bg-gray-700 hover:bg-indigo-600 flex items-center justify-center transition duration-300" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a class="w-10 h-10 rounded-full bg-gray-700 hover:bg-indigo-600 flex items-center justify-center transition duration-300" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+<a class="w-10 h-10 rounded-full bg-gray-700 hover:bg-indigo-600 flex items-center justify-center transition duration-300" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="w-10 h-10 rounded-full bg-gray-700 hover:bg-indigo-600 flex items-center justify-center transition duration-300" href="#">
+<i class="fab fa-whatsapp"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+<p>© 2023 Pet House Kenya. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Add shadow to navbar on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
